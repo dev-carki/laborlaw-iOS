@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C319E7852F0B39BB009AB3CC /* LaborLawAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7842F0B39BB009AB3CC /* LaborLawAppApp.swift */; };
+		C319E7892F0B39BC009AB3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C319E7882F0B39BC009AB3CC /* Assets.xcassets */; };
+		C319E78C2F0B39BC009AB3CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C319E78B2F0B39BC009AB3CC /* Preview Assets.xcassets */; };
+		C319E79B2F0B3A40009AB3CC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E79A2F0B3A40009AB3CC /* LoginView.swift */; };
+		C319E7A02F0B3A8A009AB3CC /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E79F2F0B3A8A009AB3CC /* Color+Extension.swift */; };
+		C319E7A22F0B3AD8009AB3CC /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7A12F0B3AD8009AB3CC /* CustomButton.swift */; };
+		C319E7A42F0B3B17009AB3CC /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7A32F0B3B17009AB3CC /* Font+Extension.swift */; };
+		C319E7AB2F0B3B8E009AB3CC /* pretendard_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C319E7A72F0B3B8E009AB3CC /* pretendard_bold.otf */; };
+		C319E7AC2F0B3B8E009AB3CC /* pretendard_regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C319E7A82F0B3B8E009AB3CC /* pretendard_regular.otf */; };
+		C319E7AD2F0B3B8E009AB3CC /* pretendard_medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C319E7A92F0B3B8E009AB3CC /* pretendard_medium.otf */; };
+		C319E7AE2F0B3B8E009AB3CC /* pretendard_semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C319E7AA2F0B3B8E009AB3CC /* pretendard_semibold.otf */; };
+		C319E7B12F0B3EDF009AB3CC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7B02F0B3EDF009AB3CC /* CustomTextField.swift */; };
+		C319E7B32F0B3FCA009AB3CC /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7B22F0B3FCA009AB3CC /* View+Extension.swift */; };
+		C319E7B52F0B4144009AB3CC /* CustomPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7B42F0B4144009AB3CC /* CustomPasswordTextField.swift */; };
+		C319E7B72F0B453C009AB3CC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7B62F0B453C009AB3CC /* LoginViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C319E7812F0B39BB009AB3CC /* LaborLawApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaborLawApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C319E7842F0B39BB009AB3CC /* LaborLawAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaborLawAppApp.swift; sourceTree = "<group>"; };
+		C319E7882F0B39BC009AB3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C319E78B2F0B39BC009AB3CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C319E79A2F0B3A40009AB3CC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C319E79F2F0B3A8A009AB3CC /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		C319E7A12F0B3AD8009AB3CC /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		C319E7A32F0B3B17009AB3CC /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		C319E7A72F0B3B8E009AB3CC /* pretendard_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pretendard_bold.otf; sourceTree = "<group>"; };
+		C319E7A82F0B3B8E009AB3CC /* pretendard_regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pretendard_regular.otf; sourceTree = "<group>"; };
+		C319E7A92F0B3B8E009AB3CC /* pretendard_medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pretendard_medium.otf; sourceTree = "<group>"; };
+		C319E7AA2F0B3B8E009AB3CC /* pretendard_semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pretendard_semibold.otf; sourceTree = "<group>"; };
+		C319E7AF2F0B3BA6009AB3CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C319E7B02F0B3EDF009AB3CC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		C319E7B22F0B3FCA009AB3CC /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		C319E7B42F0B4144009AB3CC /* CustomPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPasswordTextField.swift; sourceTree = "<group>"; };
+		C319E7B62F0B453C009AB3CC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C319E77E2F0B39BB009AB3CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C319E7782F0B39BB009AB3CC = {
+			isa = PBXGroup;
+			children = (
+				C319E7832F0B39BB009AB3CC /* LaborLawApp */,
+				C319E7822F0B39BB009AB3CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C319E7822F0B39BB009AB3CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7812F0B39BB009AB3CC /* LaborLawApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C319E7832F0B39BB009AB3CC /* LaborLawApp */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7AF2F0B3BA6009AB3CC /* Info.plist */,
+				C319E7842F0B39BB009AB3CC /* LaborLawAppApp.swift */,
+				C319E7952F0B39E5009AB3CC /* Application */,
+				C319E7942F0B39DF009AB3CC /* Presentation */,
+				C319E7932F0B39D9009AB3CC /* Domain */,
+				C319E7922F0B39D0009AB3CC /* Data */,
+				C319E78A2F0B39BC009AB3CC /* Preview Content */,
+			);
+			path = LaborLawApp;
+			sourceTree = "<group>";
+		};
+		C319E78A2F0B39BC009AB3CC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C319E78B2F0B39BC009AB3CC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C319E7922F0B39D0009AB3CC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C319E7932F0B39D9009AB3CC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C319E7942F0B39DF009AB3CC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7992F0B3A1B009AB3CC /* Components */,
+				C319E7982F0B3A15009AB3CC /* App */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C319E7952F0B39E5009AB3CC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7A52F0B3B7C009AB3CC /* Resources */,
+				C319E79E2F0B3A7F009AB3CC /* Extensions */,
+				C319E7882F0B39BC009AB3CC /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C319E7962F0B39FF009AB3CC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C319E79D2F0B3A4A009AB3CC /* Join */,
+				C319E79C2F0B3A45009AB3CC /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C319E7972F0B3A07009AB3CC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C319E7982F0B3A15009AB3CC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7972F0B3A07009AB3CC /* Main */,
+				C319E7962F0B39FF009AB3CC /* Auth */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C319E7992F0B3A1B009AB3CC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7A12F0B3AD8009AB3CC /* CustomButton.swift */,
+				C319E7B02F0B3EDF009AB3CC /* CustomTextField.swift */,
+				C319E7B42F0B4144009AB3CC /* CustomPasswordTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C319E79C2F0B3A45009AB3CC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C319E79A2F0B3A40009AB3CC /* LoginView.swift */,
+				C319E7B62F0B453C009AB3CC /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C319E79D2F0B3A4A009AB3CC /* Join */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Join;
+			sourceTree = "<group>";
+		};
+		C319E79E2F0B3A7F009AB3CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C319E79F2F0B3A8A009AB3CC /* Color+Extension.swift */,
+				C319E7A32F0B3B17009AB3CC /* Font+Extension.swift */,
+				C319E7B22F0B3FCA009AB3CC /* View+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C319E7A52F0B3B7C009AB3CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7A62F0B3B86009AB3CC /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C319E7A62F0B3B86009AB3CC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7A72F0B3B8E009AB3CC /* pretendard_bold.otf */,
+				C319E7A92F0B3B8E009AB3CC /* pretendard_medium.otf */,
+				C319E7A82F0B3B8E009AB3CC /* pretendard_regular.otf */,
+				C319E7AA2F0B3B8E009AB3CC /* pretendard_semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C319E7802F0B39BB009AB3CC /* LaborLawApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C319E78F2F0B39BC009AB3CC /* Build configuration list for PBXNativeTarget "LaborLawApp" */;
+			buildPhases = (
+				C319E77D2F0B39BB009AB3CC /* Sources */,
+				C319E77E2F0B39BB009AB3CC /* Frameworks */,
+				C319E77F2F0B39BB009AB3CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaborLawApp;
+			productName = LaborLawApp;
+			productReference = C319E7812F0B39BB009AB3CC /* LaborLawApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C319E7792F0B39BB009AB3CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					C319E7802F0B39BB009AB3CC = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = C319E77C2F0B39BB009AB3CC /* Build configuration list for PBXProject "LaborLawApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C319E7782F0B39BB009AB3CC;
+			productRefGroup = C319E7822F0B39BB009AB3CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C319E7802F0B39BB009AB3CC /* LaborLawApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C319E77F2F0B39BB009AB3CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C319E7AD2F0B3B8E009AB3CC /* pretendard_medium.otf in Resources */,
+				C319E78C2F0B39BC009AB3CC /* Preview Assets.xcassets in Resources */,
+				C319E7AB2F0B3B8E009AB3CC /* pretendard_bold.otf in Resources */,
+				C319E7892F0B39BC009AB3CC /* Assets.xcassets in Resources */,
+				C319E7AC2F0B3B8E009AB3CC /* pretendard_regular.otf in Resources */,
+				C319E7AE2F0B3B8E009AB3CC /* pretendard_semibold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C319E77D2F0B39BB009AB3CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C319E7A22F0B3AD8009AB3CC /* CustomButton.swift in Sources */,
+				C319E7A42F0B3B17009AB3CC /* Font+Extension.swift in Sources */,
+				C319E7B12F0B3EDF009AB3CC /* CustomTextField.swift in Sources */,
+				C319E79B2F0B3A40009AB3CC /* LoginView.swift in Sources */,
+				C319E7A02F0B3A8A009AB3CC /* Color+Extension.swift in Sources */,
+				C319E7B32F0B3FCA009AB3CC /* View+Extension.swift in Sources */,
+				C319E7852F0B39BB009AB3CC /* LaborLawAppApp.swift in Sources */,
+				C319E7B52F0B4144009AB3CC /* CustomPasswordTextField.swift in Sources */,
+				C319E7B72F0B453C009AB3CC /* LoginViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C319E78D2F0B39BC009AB3CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C319E78E2F0B39BC009AB3CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C319E7902F0B39BC009AB3CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LaborLawApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 48S4T8HCYX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LaborLawApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jun.LaborLawApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C319E7912F0B39BC009AB3CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LaborLawApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 48S4T8HCYX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LaborLawApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jun.LaborLawApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C319E77C2F0B39BB009AB3CC /* Build configuration list for PBXProject "LaborLawApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C319E78D2F0B39BC009AB3CC /* Debug */,
+				C319E78E2F0B39BC009AB3CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C319E78F2F0B39BC009AB3CC /* Build configuration list for PBXNativeTarget "LaborLawApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C319E7902F0B39BC009AB3CC /* Debug */,
+				C319E7912F0B39BC009AB3CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C319E7792F0B39BB009AB3CC /* Project object */;
+}
