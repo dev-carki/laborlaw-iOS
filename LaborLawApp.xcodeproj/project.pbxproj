@@ -22,6 +22,29 @@
 		C319E7B32F0B3FCA009AB3CC /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7B22F0B3FCA009AB3CC /* View+Extension.swift */; };
 		C319E7B52F0B4144009AB3CC /* CustomPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7B42F0B4144009AB3CC /* CustomPasswordTextField.swift */; };
 		C319E7B72F0B453C009AB3CC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7B62F0B453C009AB3CC /* LoginViewModel.swift */; };
+		C319E7BA2F0B5245009AB3CC /* AuthMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7B92F0B5245009AB3CC /* AuthMainView.swift */; };
+		C319E7BC2F0B524C009AB3CC /* AuthMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7BB2F0B524C009AB3CC /* AuthMainViewModel.swift */; };
+		C319E7BF2F0E11EA009AB3CC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7BE2F0E11EA009AB3CC /* Coordinator.swift */; };
+		C319E7C12F0E1203009AB3CC /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7C02F0E1203009AB3CC /* Destination.swift */; };
+		C319E7C32F0E1249009AB3CC /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7C22F0E1249009AB3CC /* TopBarView.swift */; };
+		C319E7C52F0E13E2009AB3CC /* InputIDPWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7C42F0E13E2009AB3CC /* InputIDPWView.swift */; };
+		C319E7C72F0E13EA009AB3CC /* InputIDPWViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7C62F0E13EA009AB3CC /* InputIDPWViewModel.swift */; };
+		C319E7CA2F0E1481009AB3CC /* RegexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7C92F0E1481009AB3CC /* RegexHelper.swift */; };
+		C319E7CC2F0E1707009AB3CC /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7CB2F0E1707009AB3CC /* SignUpViewModel.swift */; };
+		C319E7CE2F0E1723009AB3CC /* CreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7CD2F0E1723009AB3CC /* CreateUser.swift */; };
+		C319E7D12F0E17FE009AB3CC /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7D02F0E17FE009AB3CC /* Gender.swift */; };
+		C319E7D32F0E180E009AB3CC /* SalaryRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7D22F0E180E009AB3CC /* SalaryRange.swift */; };
+		C319E7D52F0E181B009AB3CC /* EmploymentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7D42F0E181B009AB3CC /* EmploymentType.swift */; };
+		C319E7D72F0E1825009AB3CC /* LawCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7D62F0E1825009AB3CC /* LawCode.swift */; };
+		C319E7DB2F0E209B009AB3CC /* InputUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7DA2F0E209B009AB3CC /* InputUserInfoView.swift */; };
+		C319E7DD2F0E20A1009AB3CC /* InputUserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7DC2F0E20A1009AB3CC /* InputUserInfoViewModel.swift */; };
+		C319E7DF2F0E239D009AB3CC /* CustomRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7DE2F0E239D009AB3CC /* CustomRadioButton.swift */; };
+		C319E7E12F0E95A7009AB3CC /* TitledSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7E02F0E95A7009AB3CC /* TitledSection.swift */; };
+		C319E7E32F0E98D8009AB3CC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7E22F0E98D8009AB3CC /* String+Extension.swift */; };
+		C319E7E52F0E9DCB009AB3CC /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7E42F0E9DCB009AB3CC /* Array+Extension.swift */; };
+		C319E7E82F0EA165009AB3CC /* SelectLawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7E72F0EA165009AB3CC /* SelectLawView.swift */; };
+		C319E7EA2F0EA16B009AB3CC /* SelectLawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7E92F0EA16B009AB3CC /* SelectLawViewModel.swift */; };
+		C319E7EC2F0EB2D1009AB3CC /* CustomCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7EB2F0EB2D1009AB3CC /* CustomCheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +65,29 @@
 		C319E7B22F0B3FCA009AB3CC /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		C319E7B42F0B4144009AB3CC /* CustomPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPasswordTextField.swift; sourceTree = "<group>"; };
 		C319E7B62F0B453C009AB3CC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C319E7B92F0B5245009AB3CC /* AuthMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMainView.swift; sourceTree = "<group>"; };
+		C319E7BB2F0B524C009AB3CC /* AuthMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMainViewModel.swift; sourceTree = "<group>"; };
+		C319E7BE2F0E11EA009AB3CC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C319E7C02F0E1203009AB3CC /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		C319E7C22F0E1249009AB3CC /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
+		C319E7C42F0E13E2009AB3CC /* InputIDPWView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputIDPWView.swift; sourceTree = "<group>"; };
+		C319E7C62F0E13EA009AB3CC /* InputIDPWViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputIDPWViewModel.swift; sourceTree = "<group>"; };
+		C319E7C92F0E1481009AB3CC /* RegexHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexHelper.swift; sourceTree = "<group>"; };
+		C319E7CB2F0E1707009AB3CC /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		C319E7CD2F0E1723009AB3CC /* CreateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUser.swift; sourceTree = "<group>"; };
+		C319E7D02F0E17FE009AB3CC /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		C319E7D22F0E180E009AB3CC /* SalaryRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryRange.swift; sourceTree = "<group>"; };
+		C319E7D42F0E181B009AB3CC /* EmploymentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmploymentType.swift; sourceTree = "<group>"; };
+		C319E7D62F0E1825009AB3CC /* LawCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawCode.swift; sourceTree = "<group>"; };
+		C319E7DA2F0E209B009AB3CC /* InputUserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputUserInfoView.swift; sourceTree = "<group>"; };
+		C319E7DC2F0E20A1009AB3CC /* InputUserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputUserInfoViewModel.swift; sourceTree = "<group>"; };
+		C319E7DE2F0E239D009AB3CC /* CustomRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRadioButton.swift; sourceTree = "<group>"; };
+		C319E7E02F0E95A7009AB3CC /* TitledSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitledSection.swift; sourceTree = "<group>"; };
+		C319E7E22F0E98D8009AB3CC /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		C319E7E42F0E9DCB009AB3CC /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		C319E7E72F0EA165009AB3CC /* SelectLawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLawView.swift; sourceTree = "<group>"; };
+		C319E7E92F0EA16B009AB3CC /* SelectLawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLawViewModel.swift; sourceTree = "<group>"; };
+		C319E7EB2F0EB2D1009AB3CC /* CustomCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +149,8 @@
 		C319E7932F0B39D9009AB3CC /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C319E7CF2F0E17EF009AB3CC /* ValueObjects */,
+				C319E7CD2F0E1723009AB3CC /* CreateUser.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -119,6 +167,8 @@
 		C319E7952F0B39E5009AB3CC /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				C319E7C82F0E1474009AB3CC /* Helper */,
+				C319E7BD2F0E11DA009AB3CC /* Coordinator */,
 				C319E7A52F0B3B7C009AB3CC /* Resources */,
 				C319E79E2F0B3A7F009AB3CC /* Extensions */,
 				C319E7882F0B39BC009AB3CC /* Assets.xcassets */,
@@ -129,6 +179,7 @@
 		C319E7962F0B39FF009AB3CC /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				C319E7B82F0B5236009AB3CC /* Main */,
 				C319E79D2F0B3A4A009AB3CC /* Join */,
 				C319E79C2F0B3A45009AB3CC /* Login */,
 			);
@@ -157,6 +208,10 @@
 				C319E7A12F0B3AD8009AB3CC /* CustomButton.swift */,
 				C319E7B02F0B3EDF009AB3CC /* CustomTextField.swift */,
 				C319E7B42F0B4144009AB3CC /* CustomPasswordTextField.swift */,
+				C319E7C22F0E1249009AB3CC /* TopBarView.swift */,
+				C319E7DE2F0E239D009AB3CC /* CustomRadioButton.swift */,
+				C319E7EB2F0EB2D1009AB3CC /* CustomCheckBox.swift */,
+				C319E7E02F0E95A7009AB3CC /* TitledSection.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -173,6 +228,10 @@
 		C319E79D2F0B3A4A009AB3CC /* Join */ = {
 			isa = PBXGroup;
 			children = (
+				C319E7E62F0EA158009AB3CC /* SelectLaw */,
+				C319E7D92F0E207E009AB3CC /* InputUserInfo */,
+				C319E7D82F0E1BE7009AB3CC /* InputIDPW */,
+				C319E7CB2F0E1707009AB3CC /* SignUpViewModel.swift */,
 			);
 			path = Join;
 			sourceTree = "<group>";
@@ -183,6 +242,8 @@
 				C319E79F2F0B3A8A009AB3CC /* Color+Extension.swift */,
 				C319E7A32F0B3B17009AB3CC /* Font+Extension.swift */,
 				C319E7B22F0B3FCA009AB3CC /* View+Extension.swift */,
+				C319E7E22F0E98D8009AB3CC /* String+Extension.swift */,
+				C319E7E42F0E9DCB009AB3CC /* Array+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -204,6 +265,70 @@
 				C319E7AA2F0B3B8E009AB3CC /* pretendard_semibold.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C319E7B82F0B5236009AB3CC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7B92F0B5245009AB3CC /* AuthMainView.swift */,
+				C319E7BB2F0B524C009AB3CC /* AuthMainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C319E7BD2F0E11DA009AB3CC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7BE2F0E11EA009AB3CC /* Coordinator.swift */,
+				C319E7C02F0E1203009AB3CC /* Destination.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C319E7C82F0E1474009AB3CC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7C92F0E1481009AB3CC /* RegexHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C319E7CF2F0E17EF009AB3CC /* ValueObjects */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7D02F0E17FE009AB3CC /* Gender.swift */,
+				C319E7D22F0E180E009AB3CC /* SalaryRange.swift */,
+				C319E7D42F0E181B009AB3CC /* EmploymentType.swift */,
+				C319E7D62F0E1825009AB3CC /* LawCode.swift */,
+			);
+			path = ValueObjects;
+			sourceTree = "<group>";
+		};
+		C319E7D82F0E1BE7009AB3CC /* InputIDPW */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7C42F0E13E2009AB3CC /* InputIDPWView.swift */,
+				C319E7C62F0E13EA009AB3CC /* InputIDPWViewModel.swift */,
+			);
+			path = InputIDPW;
+			sourceTree = "<group>";
+		};
+		C319E7D92F0E207E009AB3CC /* InputUserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7DA2F0E209B009AB3CC /* InputUserInfoView.swift */,
+				C319E7DC2F0E20A1009AB3CC /* InputUserInfoViewModel.swift */,
+			);
+			path = InputUserInfo;
+			sourceTree = "<group>";
+		};
+		C319E7E62F0EA158009AB3CC /* SelectLaw */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7E72F0EA165009AB3CC /* SelectLawView.swift */,
+				C319E7E92F0EA16B009AB3CC /* SelectLawViewModel.swift */,
+			);
+			path = SelectLaw;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,12 +405,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C319E7D32F0E180E009AB3CC /* SalaryRange.swift in Sources */,
+				C319E7E52F0E9DCB009AB3CC /* Array+Extension.swift in Sources */,
 				C319E7A22F0B3AD8009AB3CC /* CustomButton.swift in Sources */,
 				C319E7A42F0B3B17009AB3CC /* Font+Extension.swift in Sources */,
 				C319E7B12F0B3EDF009AB3CC /* CustomTextField.swift in Sources */,
+				C319E7E12F0E95A7009AB3CC /* TitledSection.swift in Sources */,
+				C319E7DF2F0E239D009AB3CC /* CustomRadioButton.swift in Sources */,
+				C319E7DD2F0E20A1009AB3CC /* InputUserInfoViewModel.swift in Sources */,
+				C319E7C72F0E13EA009AB3CC /* InputIDPWViewModel.swift in Sources */,
+				C319E7E32F0E98D8009AB3CC /* String+Extension.swift in Sources */,
+				C319E7CC2F0E1707009AB3CC /* SignUpViewModel.swift in Sources */,
+				C319E7C12F0E1203009AB3CC /* Destination.swift in Sources */,
+				C319E7C32F0E1249009AB3CC /* TopBarView.swift in Sources */,
+				C319E7E82F0EA165009AB3CC /* SelectLawView.swift in Sources */,
+				C319E7DB2F0E209B009AB3CC /* InputUserInfoView.swift in Sources */,
+				C319E7CA2F0E1481009AB3CC /* RegexHelper.swift in Sources */,
+				C319E7C52F0E13E2009AB3CC /* InputIDPWView.swift in Sources */,
+				C319E7EC2F0EB2D1009AB3CC /* CustomCheckBox.swift in Sources */,
+				C319E7BC2F0B524C009AB3CC /* AuthMainViewModel.swift in Sources */,
+				C319E7D52F0E181B009AB3CC /* EmploymentType.swift in Sources */,
+				C319E7CE2F0E1723009AB3CC /* CreateUser.swift in Sources */,
 				C319E79B2F0B3A40009AB3CC /* LoginView.swift in Sources */,
 				C319E7A02F0B3A8A009AB3CC /* Color+Extension.swift in Sources */,
+				C319E7D72F0E1825009AB3CC /* LawCode.swift in Sources */,
+				C319E7BA2F0B5245009AB3CC /* AuthMainView.swift in Sources */,
 				C319E7B32F0B3FCA009AB3CC /* View+Extension.swift in Sources */,
+				C319E7BF2F0E11EA009AB3CC /* Coordinator.swift in Sources */,
+				C319E7EA2F0EA16B009AB3CC /* SelectLawViewModel.swift in Sources */,
+				C319E7D12F0E17FE009AB3CC /* Gender.swift in Sources */,
 				C319E7852F0B39BB009AB3CC /* LaborLawAppApp.swift in Sources */,
 				C319E7B52F0B4144009AB3CC /* CustomPasswordTextField.swift in Sources */,
 				C319E7B72F0B453C009AB3CC /* LoginViewModel.swift in Sources */,

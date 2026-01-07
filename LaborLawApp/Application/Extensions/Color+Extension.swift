@@ -15,6 +15,8 @@ class CustomColor {
     static let fail: Color = Color(hex: "#FF0000")
     static let success: Color = Color(hex: "#27AA74")
     
+    static let topbarLineColor: Color = Color(hex: "#F4F5F7")
+    
     static let customGray700: Color = Color(hex: "#5C5C5C")
     static let customGray600: Color = Color(hex: "#757575")
     static let customGray500: Color = Color(hex: "#8F8F8F")

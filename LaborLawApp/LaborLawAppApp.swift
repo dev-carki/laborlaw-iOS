@@ -11,7 +11,8 @@ import SwiftUI
 struct LaborLawAppApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            //LoginView()
+            InputIDPWView()
         }
     }
 }

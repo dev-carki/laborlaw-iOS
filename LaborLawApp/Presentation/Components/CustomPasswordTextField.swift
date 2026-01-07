@@ -72,7 +72,7 @@ struct CustomPasswordTextField: View {
 
 #Preview {
     VStack {
-        CustomTextField(inputText: .constant(""), placeHolderText: "아이디를 입력하세요", iconName: "person.fill")
+        CustomTextField(inputText: .constant(""), keyboardType: .default, placeHolderText: "아이디를 입력하세요", iconName: "person.fill")
         CustomPasswordTextField(inputText: .constant(""), placeHolderText: "비밀번호를 입력하세요")
     }
     .padding(.horizontal, 16)
