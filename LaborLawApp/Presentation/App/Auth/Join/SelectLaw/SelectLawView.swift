@@ -51,6 +51,10 @@ struct SelectLawView: View {
                     
                     CustomButton(text: "완료") {
                         print(viewModel.signUpViewModel.createUser)
+                        
+                        Task {
+                            await viewModel.createUser()
+                        }
                     }
                     .padding(.horizontal, 16)
                 }

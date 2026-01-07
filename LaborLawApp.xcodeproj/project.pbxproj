@@ -45,6 +45,28 @@
 		C319E7E82F0EA165009AB3CC /* SelectLawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7E72F0EA165009AB3CC /* SelectLawView.swift */; };
 		C319E7EA2F0EA16B009AB3CC /* SelectLawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7E92F0EA16B009AB3CC /* SelectLawViewModel.swift */; };
 		C319E7EC2F0EB2D1009AB3CC /* CustomCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7EB2F0EB2D1009AB3CC /* CustomCheckBox.swift */; };
+		C319E7EF2F0EB9CE009AB3CC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C319E7EE2F0EB9CE009AB3CC /* Alamofire */; };
+		C319E7F22F0EB9E4009AB3CC /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = C319E7F12F0EB9E4009AB3CC /* Factory */; };
+		C319E7F42F0EC5B2009AB3CC /* BaseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7F32F0EC5B2009AB3CC /* BaseNetworkService.swift */; };
+		C319E7F62F0EC5CD009AB3CC /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7F52F0EC5CD009AB3CC /* APIError.swift */; };
+		C319E7F92F0EC5F4009AB3CC /* LaborLawNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7F82F0EC5F4009AB3CC /* LaborLawNetworkService.swift */; };
+		C319E7FB2F0EC613009AB3CC /* LaborLawNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7FA2F0EC613009AB3CC /* LaborLawNetworkError.swift */; };
+		C319E7FF2F0EC689009AB3CC /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E7FE2F0EC689009AB3CC /* NetworkError.swift */; };
+		C319E8022F0EC7A9009AB3CC /* LaborLawErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E8012F0EC7A9009AB3CC /* LaborLawErrorResponse.swift */; };
+		C319E8052F0EC81C009AB3CC /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E8042F0EC81C009AB3CC /* EndPoint.swift */; };
+		C319E8082F0EC868009AB3CC /* LaborLawAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E8072F0EC868009AB3CC /* LaborLawAPI.swift */; };
+		C319E80D2F0EC92D009AB3CC /* CreateUserRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E80C2F0EC92D009AB3CC /* CreateUserRequestDTO.swift */; };
+		C319E8102F0ECA3E009AB3CC /* LaborLawResponseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E80F2F0ECA3E009AB3CC /* LaborLawResponseWrapper.swift */; };
+		C319E8132F0ECA74009AB3CC /* CreateUserResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E8122F0ECA74009AB3CC /* CreateUserResponseDTO.swift */; };
+		C319E8162F0ECAB6009AB3CC /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E8152F0ECAB6009AB3CC /* Encodable+Extension.swift */; };
+		C319E8182F0ECADD009AB3CC /* LaborLawEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E8172F0ECADD009AB3CC /* LaborLawEndpoints.swift */; };
+		C319E81B2F0ECB90009AB3CC /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E81A2F0ECB90009AB3CC /* UserRepository.swift */; };
+		C319E81E2F0ECBBC009AB3CC /* UserRepositoryIMPL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E81D2F0ECBBC009AB3CC /* UserRepositoryIMPL.swift */; };
+		C319E8222F0ECC34009AB3CC /* CreateUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E8212F0ECC34009AB3CC /* CreateUserUseCase.swift */; };
+		C319E8252F0ED055009AB3CC /* SignUpResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E8242F0ED055009AB3CC /* SignUpResult.swift */; };
+		C319E8292F0ED465009AB3CC /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E8282F0ED465009AB3CC /* DIContainer.swift */; };
+		C319E82C2F0ED4B6009AB3CC /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E82B2F0ED4B6009AB3CC /* AppConfig.swift */; };
+		C319E82E2F0ED6C2009AB3CC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C319E82D2F0ED6C2009AB3CC /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +110,28 @@
 		C319E7E72F0EA165009AB3CC /* SelectLawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLawView.swift; sourceTree = "<group>"; };
 		C319E7E92F0EA16B009AB3CC /* SelectLawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLawViewModel.swift; sourceTree = "<group>"; };
 		C319E7EB2F0EB2D1009AB3CC /* CustomCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCheckBox.swift; sourceTree = "<group>"; };
+		C319E7F32F0EC5B2009AB3CC /* BaseNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkService.swift; sourceTree = "<group>"; };
+		C319E7F52F0EC5CD009AB3CC /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		C319E7F82F0EC5F4009AB3CC /* LaborLawNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaborLawNetworkService.swift; sourceTree = "<group>"; };
+		C319E7FA2F0EC613009AB3CC /* LaborLawNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaborLawNetworkError.swift; sourceTree = "<group>"; };
+		C319E7FE2F0EC689009AB3CC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C319E8012F0EC7A9009AB3CC /* LaborLawErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaborLawErrorResponse.swift; sourceTree = "<group>"; };
+		C319E8042F0EC81C009AB3CC /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		C319E8072F0EC868009AB3CC /* LaborLawAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaborLawAPI.swift; sourceTree = "<group>"; };
+		C319E80C2F0EC92D009AB3CC /* CreateUserRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserRequestDTO.swift; sourceTree = "<group>"; };
+		C319E80F2F0ECA3E009AB3CC /* LaborLawResponseWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaborLawResponseWrapper.swift; sourceTree = "<group>"; };
+		C319E8122F0ECA74009AB3CC /* CreateUserResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserResponseDTO.swift; sourceTree = "<group>"; };
+		C319E8152F0ECAB6009AB3CC /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		C319E8172F0ECADD009AB3CC /* LaborLawEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaborLawEndpoints.swift; sourceTree = "<group>"; };
+		C319E81A2F0ECB90009AB3CC /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		C319E81D2F0ECBBC009AB3CC /* UserRepositoryIMPL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryIMPL.swift; sourceTree = "<group>"; };
+		C319E8212F0ECC34009AB3CC /* CreateUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserUseCase.swift; sourceTree = "<group>"; };
+		C319E8242F0ED055009AB3CC /* SignUpResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResult.swift; sourceTree = "<group>"; };
+		C319E8282F0ED465009AB3CC /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		C319E82B2F0ED4B6009AB3CC /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		C319E82D2F0ED6C2009AB3CC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C319E82F2F0ED6F1009AB3CC /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		C319E8302F0ED6FB009AB3CC /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +139,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C319E7EF2F0EB9CE009AB3CC /* Alamofire in Frameworks */,
+				C319E7F22F0EB9E4009AB3CC /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +150,7 @@
 		C319E7782F0B39BB009AB3CC = {
 			isa = PBXGroup;
 			children = (
+				C319E82D2F0ED6C2009AB3CC /* .gitignore */,
 				C319E7832F0B39BB009AB3CC /* LaborLawApp */,
 				C319E7822F0B39BB009AB3CC /* Products */,
 			);
@@ -142,6 +189,9 @@
 		C319E7922F0B39D0009AB3CC /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C319E81C2F0ECBB0009AB3CC /* RepositoryIMPL */,
+				C319E8092F0EC8D5009AB3CC /* DTO */,
+				C319E8032F0EC807009AB3CC /* Network */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -149,8 +199,10 @@
 		C319E7932F0B39D9009AB3CC /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C319E81F2F0ECC17009AB3CC /* UseCase */,
+				C319E8192F0ECB7F009AB3CC /* Repository */,
+				C319E7FC2F0EC63D009AB3CC /* Entities */,
 				C319E7CF2F0E17EF009AB3CC /* ValueObjects */,
-				C319E7CD2F0E1723009AB3CC /* CreateUser.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -167,6 +219,8 @@
 		C319E7952F0B39E5009AB3CC /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				C319E82A2F0ED4B1009AB3CC /* Config */,
+				C319E8272F0ED459009AB3CC /* Injection */,
 				C319E7C82F0E1474009AB3CC /* Helper */,
 				C319E7BD2F0E11DA009AB3CC /* Coordinator */,
 				C319E7A52F0B3B7C009AB3CC /* Resources */,
@@ -244,6 +298,7 @@
 				C319E7B22F0B3FCA009AB3CC /* View+Extension.swift */,
 				C319E7E22F0E98D8009AB3CC /* String+Extension.swift */,
 				C319E7E42F0E9DCB009AB3CC /* Array+Extension.swift */,
+				C319E8152F0ECAB6009AB3CC /* Encodable+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -331,6 +386,163 @@
 			path = SelectLaw;
 			sourceTree = "<group>";
 		};
+		C319E7F72F0EC5E5009AB3CC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7F82F0EC5F4009AB3CC /* LaborLawNetworkService.swift */,
+				C319E7FA2F0EC613009AB3CC /* LaborLawNetworkError.swift */,
+				C319E8042F0EC81C009AB3CC /* EndPoint.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C319E7FC2F0EC63D009AB3CC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C319E8232F0ED03D009AB3CC /* User */,
+				C319E7FD2F0EC682009AB3CC /* Error */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C319E7FD2F0EC682009AB3CC /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				C319E8012F0EC7A9009AB3CC /* LaborLawErrorResponse.swift */,
+				C319E7FE2F0EC689009AB3CC /* NetworkError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		C319E8032F0EC807009AB3CC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C319E8062F0EC834009AB3CC /* LaborLaw */,
+				C319E7F72F0EC5E5009AB3CC /* Common */,
+				C319E7F32F0EC5B2009AB3CC /* BaseNetworkService.swift */,
+				C319E7F52F0EC5CD009AB3CC /* APIError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C319E8062F0EC834009AB3CC /* LaborLaw */ = {
+			isa = PBXGroup;
+			children = (
+				C319E8072F0EC868009AB3CC /* LaborLawAPI.swift */,
+				C319E8172F0ECADD009AB3CC /* LaborLawEndpoints.swift */,
+			);
+			path = LaborLaw;
+			sourceTree = "<group>";
+		};
+		C319E8092F0EC8D5009AB3CC /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				C319E80B2F0EC8E0009AB3CC /* Response */,
+				C319E80A2F0EC8DB009AB3CC /* Request */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		C319E80A2F0EC8DB009AB3CC /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				C319E8142F0ECA78009AB3CC /* User */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		C319E80B2F0EC8E0009AB3CC /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				C319E8112F0ECA68009AB3CC /* User */,
+				C319E80E2F0ECA34009AB3CC /* Common */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		C319E80E2F0ECA34009AB3CC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C319E80F2F0ECA3E009AB3CC /* LaborLawResponseWrapper.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C319E8112F0ECA68009AB3CC /* User */ = {
+			isa = PBXGroup;
+			children = (
+				C319E8122F0ECA74009AB3CC /* CreateUserResponseDTO.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		C319E8142F0ECA78009AB3CC /* User */ = {
+			isa = PBXGroup;
+			children = (
+				C319E80C2F0EC92D009AB3CC /* CreateUserRequestDTO.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		C319E8192F0ECB7F009AB3CC /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C319E81A2F0ECB90009AB3CC /* UserRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C319E81C2F0ECBB0009AB3CC /* RepositoryIMPL */ = {
+			isa = PBXGroup;
+			children = (
+				C319E81D2F0ECBBC009AB3CC /* UserRepositoryIMPL.swift */,
+			);
+			path = RepositoryIMPL;
+			sourceTree = "<group>";
+		};
+		C319E81F2F0ECC17009AB3CC /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				C319E8202F0ECC27009AB3CC /* User */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		C319E8202F0ECC27009AB3CC /* User */ = {
+			isa = PBXGroup;
+			children = (
+				C319E8212F0ECC34009AB3CC /* CreateUserUseCase.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		C319E8232F0ED03D009AB3CC /* User */ = {
+			isa = PBXGroup;
+			children = (
+				C319E7CD2F0E1723009AB3CC /* CreateUser.swift */,
+				C319E8242F0ED055009AB3CC /* SignUpResult.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		C319E8272F0ED459009AB3CC /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				C319E8282F0ED465009AB3CC /* DIContainer.swift */,
+			);
+			path = Injection;
+			sourceTree = "<group>";
+		};
+		C319E82A2F0ED4B1009AB3CC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C319E82B2F0ED4B6009AB3CC /* AppConfig.swift */,
+				C319E82F2F0ED6F1009AB3CC /* Debug.xcconfig */,
+				C319E8302F0ED6FB009AB3CC /* Release.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -347,6 +559,10 @@
 			dependencies = (
 			);
 			name = LaborLawApp;
+			packageProductDependencies = (
+				C319E7EE2F0EB9CE009AB3CC /* Alamofire */,
+				C319E7F12F0EB9E4009AB3CC /* Factory */,
+			);
 			productName = LaborLawApp;
 			productReference = C319E7812F0B39BB009AB3CC /* LaborLawApp.app */;
 			productType = "com.apple.product-type.application";
@@ -375,6 +591,10 @@
 				Base,
 			);
 			mainGroup = C319E7782F0B39BB009AB3CC;
+			packageReferences = (
+				C319E7ED2F0EB9CE009AB3CC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C319E7F02F0EB9E4009AB3CC /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			productRefGroup = C319E7822F0B39BB009AB3CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -390,6 +610,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C319E7AD2F0B3B8E009AB3CC /* pretendard_medium.otf in Resources */,
+				C319E82E2F0ED6C2009AB3CC /* .gitignore in Resources */,
 				C319E78C2F0B39BC009AB3CC /* Preview Assets.xcassets in Resources */,
 				C319E7AB2F0B3B8E009AB3CC /* pretendard_bold.otf in Resources */,
 				C319E7892F0B39BC009AB3CC /* Assets.xcassets in Resources */,
@@ -405,10 +626,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C319E8052F0EC81C009AB3CC /* EndPoint.swift in Sources */,
 				C319E7D32F0E180E009AB3CC /* SalaryRange.swift in Sources */,
+				C319E8082F0EC868009AB3CC /* LaborLawAPI.swift in Sources */,
 				C319E7E52F0E9DCB009AB3CC /* Array+Extension.swift in Sources */,
+				C319E81E2F0ECBBC009AB3CC /* UserRepositoryIMPL.swift in Sources */,
+				C319E8102F0ECA3E009AB3CC /* LaborLawResponseWrapper.swift in Sources */,
 				C319E7A22F0B3AD8009AB3CC /* CustomButton.swift in Sources */,
+				C319E7F62F0EC5CD009AB3CC /* APIError.swift in Sources */,
 				C319E7A42F0B3B17009AB3CC /* Font+Extension.swift in Sources */,
+				C319E8182F0ECADD009AB3CC /* LaborLawEndpoints.swift in Sources */,
+				C319E7FB2F0EC613009AB3CC /* LaborLawNetworkError.swift in Sources */,
+				C319E80D2F0EC92D009AB3CC /* CreateUserRequestDTO.swift in Sources */,
 				C319E7B12F0B3EDF009AB3CC /* CustomTextField.swift in Sources */,
 				C319E7E12F0E95A7009AB3CC /* TitledSection.swift in Sources */,
 				C319E7DF2F0E239D009AB3CC /* CustomRadioButton.swift in Sources */,
@@ -419,23 +648,34 @@
 				C319E7C12F0E1203009AB3CC /* Destination.swift in Sources */,
 				C319E7C32F0E1249009AB3CC /* TopBarView.swift in Sources */,
 				C319E7E82F0EA165009AB3CC /* SelectLawView.swift in Sources */,
+				C319E8292F0ED465009AB3CC /* DIContainer.swift in Sources */,
+				C319E7FF2F0EC689009AB3CC /* NetworkError.swift in Sources */,
+				C319E7F42F0EC5B2009AB3CC /* BaseNetworkService.swift in Sources */,
 				C319E7DB2F0E209B009AB3CC /* InputUserInfoView.swift in Sources */,
 				C319E7CA2F0E1481009AB3CC /* RegexHelper.swift in Sources */,
+				C319E82C2F0ED4B6009AB3CC /* AppConfig.swift in Sources */,
 				C319E7C52F0E13E2009AB3CC /* InputIDPWView.swift in Sources */,
+				C319E8162F0ECAB6009AB3CC /* Encodable+Extension.swift in Sources */,
 				C319E7EC2F0EB2D1009AB3CC /* CustomCheckBox.swift in Sources */,
+				C319E7F92F0EC5F4009AB3CC /* LaborLawNetworkService.swift in Sources */,
 				C319E7BC2F0B524C009AB3CC /* AuthMainViewModel.swift in Sources */,
+				C319E8132F0ECA74009AB3CC /* CreateUserResponseDTO.swift in Sources */,
 				C319E7D52F0E181B009AB3CC /* EmploymentType.swift in Sources */,
 				C319E7CE2F0E1723009AB3CC /* CreateUser.swift in Sources */,
 				C319E79B2F0B3A40009AB3CC /* LoginView.swift in Sources */,
+				C319E8022F0EC7A9009AB3CC /* LaborLawErrorResponse.swift in Sources */,
 				C319E7A02F0B3A8A009AB3CC /* Color+Extension.swift in Sources */,
+				C319E81B2F0ECB90009AB3CC /* UserRepository.swift in Sources */,
 				C319E7D72F0E1825009AB3CC /* LawCode.swift in Sources */,
 				C319E7BA2F0B5245009AB3CC /* AuthMainView.swift in Sources */,
 				C319E7B32F0B3FCA009AB3CC /* View+Extension.swift in Sources */,
+				C319E8252F0ED055009AB3CC /* SignUpResult.swift in Sources */,
 				C319E7BF2F0E11EA009AB3CC /* Coordinator.swift in Sources */,
 				C319E7EA2F0EA16B009AB3CC /* SelectLawViewModel.swift in Sources */,
 				C319E7D12F0E17FE009AB3CC /* Gender.swift in Sources */,
 				C319E7852F0B39BB009AB3CC /* LaborLawAppApp.swift in Sources */,
 				C319E7B52F0B4144009AB3CC /* CustomPasswordTextField.swift in Sources */,
+				C319E8222F0ECC34009AB3CC /* CreateUserUseCase.swift in Sources */,
 				C319E7B72F0B453C009AB3CC /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +685,7 @@
 /* Begin XCBuildConfiguration section */
 		C319E78D2F0B39BC009AB3CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C319E82F2F0ED6F1009AB3CC /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -508,6 +749,7 @@
 		};
 		C319E78E2F0B39BC009AB3CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C319E8302F0ED6FB009AB3CC /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -564,6 +806,7 @@
 		};
 		C319E7902F0B39BC009AB3CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C319E82F2F0ED6F1009AB3CC /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -594,6 +837,7 @@
 		};
 		C319E7912F0B39BC009AB3CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C319E8302F0ED6FB009AB3CC /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -644,6 +888,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C319E7ED2F0EB9CE009AB3CC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.10.2;
+			};
+		};
+		C319E7F02F0EB9E4009AB3CC /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = exactVersion;
+				version = 2.5.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C319E7EE2F0EB9CE009AB3CC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C319E7ED2F0EB9CE009AB3CC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		C319E7F12F0EB9E4009AB3CC /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C319E7F02F0EB9E4009AB3CC /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C319E7792F0B39BB009AB3CC /* Project object */;
 }
