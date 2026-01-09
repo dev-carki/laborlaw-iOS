@@ -21,21 +21,25 @@ struct LaborLawAppApp: App {
                     switch coordinator.rootState {
                     case .home:
                         HomeView()
+                            .transition(.opacity)
                             .onAppear {
                                 print("[SD] appear home view")
                             }
                     case .login:
                         LoginView()
+                            .transition(.opacity.combined(with: .scale(scale: 0.95)))
                             .onAppear {
                                 print("[SD] appear login view")
                             }
                     case .splash:
                         SplashView()
+                            .transition(.opacity.combined(with: .scale))
                             .onAppear {
                                 print("[SD] appear splash view")
                             }
                     }
                 }
+                .animation(.easeInOut(duration: 0.35), value: coordinator.rootState)
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden()
             }

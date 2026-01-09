@@ -76,6 +76,9 @@
 		C33DFDEE2F1170A4006FA7EE /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDED2F1170A4006FA7EE /* LoginUseCase.swift */; };
 		C33DFDF12F1185F2006FA7EE /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDEF2F1185F1006FA7EE /* CustomLoadingView.swift */; };
 		C33DFDF22F1185F2006FA7EE /* CustomPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDF02F1185F2006FA7EE /* CustomPopupView.swift */; };
+		C33DFDF62F1187D6006FA7EE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDF52F1187D6006FA7EE /* HomeView.swift */; };
+		C33DFDF92F1187E7006FA7EE /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDF82F1187E7006FA7EE /* SplashView.swift */; };
+		C33DFDFB2F1187ED006FA7EE /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDFA2F1187ED006FA7EE /* SplashViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -151,6 +154,9 @@
 		C33DFDED2F1170A4006FA7EE /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 		C33DFDEF2F1185F1006FA7EE /* CustomLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
 		C33DFDF02F1185F2006FA7EE /* CustomPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPopupView.swift; sourceTree = "<group>"; };
+		C33DFDF52F1187D6006FA7EE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C33DFDF82F1187E7006FA7EE /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		C33DFDFA2F1187ED006FA7EE /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +269,8 @@
 		C319E7982F0B3A15009AB3CC /* App */ = {
 			isa = PBXGroup;
 			children = (
+				C33DFDF72F1187DC006FA7EE /* Splash */,
+				C33DFDF42F1187CE006FA7EE /* Home */,
 				C319E7962F0B39FF009AB3CC /* Auth */,
 			);
 			path = App;
@@ -588,6 +596,23 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		C33DFDF42F1187CE006FA7EE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C33DFDF52F1187D6006FA7EE /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C33DFDF72F1187DC006FA7EE /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				C33DFDF82F1187E7006FA7EE /* SplashView.swift */,
+				C33DFDFA2F1187ED006FA7EE /* SplashViewModel.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -674,6 +699,7 @@
 				C319E8052F0EC81C009AB3CC /* EndPoint.swift in Sources */,
 				C33DFDE92F116E10006FA7EE /* LoginRequestDTO.swift in Sources */,
 				C33DFDF22F1185F2006FA7EE /* CustomPopupView.swift in Sources */,
+				C33DFDFB2F1187ED006FA7EE /* SplashViewModel.swift in Sources */,
 				C319E7D32F0E180E009AB3CC /* SalaryRange.swift in Sources */,
 				C319E8082F0EC868009AB3CC /* LaborLawAPI.swift in Sources */,
 				C33DFDE02F116D1E006FA7EE /* Login.swift in Sources */,
@@ -681,6 +707,8 @@
 				C319E81E2F0ECBBC009AB3CC /* UserRepositoryIMPL.swift in Sources */,
 				C33DFDE42F116D80006FA7EE /* LoginResult.swift in Sources */,
 				C319E8102F0ECA3E009AB3CC /* LaborLawResponseWrapper.swift in Sources */,
+				C33DFDF62F1187D6006FA7EE /* HomeView.swift in Sources */,
+				C33DFDF92F1187E7006FA7EE /* SplashView.swift in Sources */,
 				C319E7A22F0B3AD8009AB3CC /* CustomButton.swift in Sources */,
 				C319E7F62F0EC5CD009AB3CC /* APIError.swift in Sources */,
 				C319E7A42F0B3B17009AB3CC /* Font+Extension.swift in Sources */,
