@@ -11,26 +11,19 @@ struct SplashView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @StateObject private var viewModel = SplashViewModel()
     @StateObject private var coordinator: Coordinator = Coordinator()
-    
     var body: some View {
         NavigationView {
-            Text("Splash View")
+            Text("splash!")
         }
-        .ignoresSafeArea()
         .navigationViewStyle(.stack)
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden()
-        .onChange(of: $viewModel.isAvailableToMoveMain.wrappedValue, perform: { value in
-            coordinator.moveToMain()
-        })
+//        .onChange(of: $vm.isAvailableToMoveMain.wrappedValue, perform: { value in
+//            coordinator.moveToMain()
+//        })
         .onChange(of: $viewModel.isAvailableToMoveLogin.wrappedValue, perform: { value in
-            if value {
-                withAnimation {
-                    coordinator.moveToLogin()
-                }
-            }
+            coordinator.moveToLogin()
         })
-        
     }
 }
 
