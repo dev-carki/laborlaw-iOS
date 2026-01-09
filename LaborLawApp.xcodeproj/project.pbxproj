@@ -67,6 +67,11 @@
 		C319E8292F0ED465009AB3CC /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E8282F0ED465009AB3CC /* DIContainer.swift */; };
 		C319E82C2F0ED4B6009AB3CC /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E82B2F0ED4B6009AB3CC /* AppConfig.swift */; };
 		C319E82E2F0ED6C2009AB3CC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C319E82D2F0ED6C2009AB3CC /* .gitignore */; };
+		C319E8332F113097009AB3CC /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E8322F113097009AB3CC /* CustomLoadingView.swift */; };
+		C33DFDD62F115889006FA7EE /* CustomPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDD52F115889006FA7EE /* CustomPopupView.swift */; };
+		C33DFDD82F115B06006FA7EE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDD72F115B06006FA7EE /* HomeView.swift */; };
+		C33DFDDB2F115B2C006FA7EE /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDDA2F115B2C006FA7EE /* SplashView.swift */; };
+		C33DFDDD2F115BB4006FA7EE /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDDC2F115BB4006FA7EE /* SplashViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,6 +138,11 @@
 		C319E82F2F0ED6F1009AB3CC /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		C319E8302F0ED6FB009AB3CC /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		C319E8312F112791009AB3CC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C319E8322F113097009AB3CC /* CustomLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
+		C33DFDD52F115889006FA7EE /* CustomPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopupView.swift; sourceTree = "<group>"; };
+		C33DFDD72F115B06006FA7EE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C33DFDDA2F115B2C006FA7EE /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		C33DFDDC2F115BB4006FA7EE /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,17 +252,19 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		C319E7972F0B3A07009AB3CC /* Main */ = {
+		C319E7972F0B3A07009AB3CC /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C33DFDD72F115B06006FA7EE /* HomeView.swift */,
 			);
-			path = Main;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		C319E7982F0B3A15009AB3CC /* App */ = {
 			isa = PBXGroup;
 			children = (
-				C319E7972F0B3A07009AB3CC /* Main */,
+				C33DFDD92F115B24006FA7EE /* Splash */,
+				C319E7972F0B3A07009AB3CC /* Home */,
 				C319E7962F0B39FF009AB3CC /* Auth */,
 			);
 			path = App;
@@ -268,6 +280,8 @@
 				C319E7DE2F0E239D009AB3CC /* CustomRadioButton.swift */,
 				C319E7EB2F0EB2D1009AB3CC /* CustomCheckBox.swift */,
 				C319E7E02F0E95A7009AB3CC /* TitledSection.swift */,
+				C319E8322F113097009AB3CC /* CustomLoadingView.swift */,
+				C33DFDD52F115889006FA7EE /* CustomPopupView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -545,6 +559,15 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		C33DFDD92F115B24006FA7EE /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				C33DFDDA2F115B2C006FA7EE /* SplashView.swift */,
+				C33DFDDC2F115BB4006FA7EE /* SplashViewModel.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -638,7 +661,9 @@
 				C319E7F62F0EC5CD009AB3CC /* APIError.swift in Sources */,
 				C319E7A42F0B3B17009AB3CC /* Font+Extension.swift in Sources */,
 				C319E8182F0ECADD009AB3CC /* LaborLawEndpoints.swift in Sources */,
+				C319E8332F113097009AB3CC /* CustomLoadingView.swift in Sources */,
 				C319E7FB2F0EC613009AB3CC /* LaborLawNetworkError.swift in Sources */,
+				C33DFDDB2F115B2C006FA7EE /* SplashView.swift in Sources */,
 				C319E80D2F0EC92D009AB3CC /* CreateUserRequestDTO.swift in Sources */,
 				C319E7B12F0B3EDF009AB3CC /* CustomTextField.swift in Sources */,
 				C319E7E12F0E95A7009AB3CC /* TitledSection.swift in Sources */,
@@ -646,6 +671,7 @@
 				C319E7DD2F0E20A1009AB3CC /* InputUserInfoViewModel.swift in Sources */,
 				C319E7C72F0E13EA009AB3CC /* InputIDPWViewModel.swift in Sources */,
 				C319E7E32F0E98D8009AB3CC /* String+Extension.swift in Sources */,
+				C33DFDD82F115B06006FA7EE /* HomeView.swift in Sources */,
 				C319E7CC2F0E1707009AB3CC /* SignUpViewModel.swift in Sources */,
 				C319E7C12F0E1203009AB3CC /* Destination.swift in Sources */,
 				C319E7C32F0E1249009AB3CC /* TopBarView.swift in Sources */,
@@ -656,6 +682,7 @@
 				C319E7DB2F0E209B009AB3CC /* InputUserInfoView.swift in Sources */,
 				C319E7CA2F0E1481009AB3CC /* RegexHelper.swift in Sources */,
 				C319E82C2F0ED4B6009AB3CC /* AppConfig.swift in Sources */,
+				C33DFDDD2F115BB4006FA7EE /* SplashViewModel.swift in Sources */,
 				C319E7C52F0E13E2009AB3CC /* InputIDPWView.swift in Sources */,
 				C319E8162F0ECAB6009AB3CC /* Encodable+Extension.swift in Sources */,
 				C319E7EC2F0EB2D1009AB3CC /* CustomCheckBox.swift in Sources */,
@@ -677,6 +704,7 @@
 				C319E7D12F0E17FE009AB3CC /* Gender.swift in Sources */,
 				C319E7852F0B39BB009AB3CC /* LaborLawAppApp.swift in Sources */,
 				C319E7B52F0B4144009AB3CC /* CustomPasswordTextField.swift in Sources */,
+				C33DFDD62F115889006FA7EE /* CustomPopupView.swift in Sources */,
 				C319E8222F0ECC34009AB3CC /* CreateUserUseCase.swift in Sources */,
 				C319E7B72F0B453C009AB3CC /* LoginViewModel.swift in Sources */,
 			);

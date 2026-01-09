@@ -58,6 +58,14 @@ struct SelectLawView: View {
                     }
                     .padding(.horizontal, 16)
                 }
+                
+                CustomLoadingView(titleText: "생성중입니다.", isLoading: viewModel.isUserCreating)
+                
+                if viewModel.isUserCreatingSuccess {
+                    CustomPopupView(titleText: "계정 생성 완료", buttonText: "홈으로 이동") {
+                        self.coordinator.moveToLogin()
+                    }
+                }
             }
         }
         .onAppear {

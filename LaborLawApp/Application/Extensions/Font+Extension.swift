@@ -22,6 +22,8 @@ extension Font {
     static let regularText: Font = .custom(CustomFont.regular.rawValue, size: 12)
     static let radioButtonText: Font = .custom(CustomFont.semiBold.rawValue, size: 14)
     static let topbarViewText: Font = .custom(CustomFont.bold.rawValue, size: 16)
+    static let loadingViewTitleText: Font = .custom(CustomFont.medium.rawValue, size: 22)
+    static let loadingViewSubTitleText: Font = .custom(CustomFont.medium.rawValue, size: 16)
     // static let headline: Font = .custom(TRKFont.bold.rawValue, size: 24)
     //Pretendard.semi_bold.value, size: 16
 }
