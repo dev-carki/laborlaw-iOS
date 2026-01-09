@@ -25,6 +25,14 @@ extension LaborLawAPI {
     }
 }
 
+// MARK: Auth
+extension LaborLawAPI {
+    func login(_ request: LoginRequestDTO) async -> Result<LaborLawResponseWrapper<LoginResponseDTO>, LaborLawNetworkError> {
+        let body = request.toDictionary()
+        return await self.networkService.post(self.host, url: LaborLawEndpoints.Auth.login.url, httpBody: body)
+    }
+}
+
 //// MARK: Auth
 //extension LaborLawAPI {
 //    func create_user(_ request: CreateStoreRequestModel) async -> Result<MenuBoardResponseWrapper<CreateStoreResponseModel>, LaborLawNetworkError> {

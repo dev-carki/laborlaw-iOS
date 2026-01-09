@@ -16,10 +16,12 @@ struct LoginView: View {
             ZStack {
                 VStack(spacing: 16) {
                     coordinator.navigationLinkSection()
-                    CustomTextField(inputText: $viewModel.idText, placeHolderText: "아이디를 입력하세요", iconName: "person.fill")
-                    CustomPasswordTextField(inputText: $viewModel.pwText, placeHolderText: "비밀번호를 입력하세요")
+                    CustomTextField(inputText: $viewModel.loginData.id, placeHolderText: "아이디를 입력하세요", iconName: "person.fill")
+                    CustomPasswordTextField(inputText: $viewModel.loginData.pw, placeHolderText: "비밀번호를 입력하세요")
                     CustomButton(text: "로그인") {
-                        
+                        Task {
+                            await viewModel.login()
+                        }
                     }
                     .padding(.top, 8)
                     
