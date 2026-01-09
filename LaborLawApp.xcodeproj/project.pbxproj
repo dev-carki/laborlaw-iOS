@@ -74,6 +74,8 @@
 		C33DFDE92F116E10006FA7EE /* LoginRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDE82F116E10006FA7EE /* LoginRequestDTO.swift */; };
 		C33DFDEC2F116E52006FA7EE /* LoginResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDEB2F116E52006FA7EE /* LoginResponseDTO.swift */; };
 		C33DFDEE2F1170A4006FA7EE /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDED2F1170A4006FA7EE /* LoginUseCase.swift */; };
+		C33DFDF12F1185F2006FA7EE /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDEF2F1185F1006FA7EE /* CustomLoadingView.swift */; };
+		C33DFDF22F1185F2006FA7EE /* CustomPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDF02F1185F2006FA7EE /* CustomPopupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,6 +149,8 @@
 		C33DFDE82F116E10006FA7EE /* LoginRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestDTO.swift; sourceTree = "<group>"; };
 		C33DFDEB2F116E52006FA7EE /* LoginResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDTO.swift; sourceTree = "<group>"; };
 		C33DFDED2F1170A4006FA7EE /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		C33DFDEF2F1185F1006FA7EE /* CustomLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
+		C33DFDF02F1185F2006FA7EE /* CustomPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPopupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +279,8 @@
 		C319E7992F0B3A1B009AB3CC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C33DFDEF2F1185F1006FA7EE /* CustomLoadingView.swift */,
+				C33DFDF02F1185F2006FA7EE /* CustomPopupView.swift */,
 				C319E7A12F0B3AD8009AB3CC /* CustomButton.swift */,
 				C319E7B02F0B3EDF009AB3CC /* CustomTextField.swift */,
 				C319E7B42F0B4144009AB3CC /* CustomPasswordTextField.swift */,
@@ -675,6 +681,7 @@
 			files = (
 				C319E8052F0EC81C009AB3CC /* EndPoint.swift in Sources */,
 				C33DFDE92F116E10006FA7EE /* LoginRequestDTO.swift in Sources */,
+				C33DFDF22F1185F2006FA7EE /* CustomPopupView.swift in Sources */,
 				C319E7D32F0E180E009AB3CC /* SalaryRange.swift in Sources */,
 				C319E8082F0EC868009AB3CC /* LaborLawAPI.swift in Sources */,
 				C33DFDE02F116D1E006FA7EE /* Login.swift in Sources */,
@@ -691,6 +698,7 @@
 				C319E7B12F0B3EDF009AB3CC /* CustomTextField.swift in Sources */,
 				C319E7E12F0E95A7009AB3CC /* TitledSection.swift in Sources */,
 				C319E7DF2F0E239D009AB3CC /* CustomRadioButton.swift in Sources */,
+				C33DFDF12F1185F2006FA7EE /* CustomLoadingView.swift in Sources */,
 				C33DFDE62F116DE2006FA7EE /* AuthRepositoryIMPL.swift in Sources */,
 				C319E7DD2F0E20A1009AB3CC /* InputUserInfoViewModel.swift in Sources */,
 				C319E7C72F0E13EA009AB3CC /* InputIDPWViewModel.swift in Sources */,
