@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     @StateObject private var viewModel = LoginViewModel()
-    @StateObject var coordinator = Coordinator()
+    @StateObject var coordinator = Coordinator(isRoot: true)
             
     var body: some View {
         NavigationView {
@@ -68,12 +68,16 @@ struct LoginView: View {
                                     .frame(height: 1)
                             }
                             .onTapGesture {
+                                self.coordinator.push(destination: .inputIDPW)
                             }
                     }
                     .frame(maxWidth: .infinity)
                 }
             }
         }
+        .navigationViewStyle(.stack)
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden()
     }
 }
 
