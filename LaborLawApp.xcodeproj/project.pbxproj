@@ -67,11 +67,15 @@
 		C319E8292F0ED465009AB3CC /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E8282F0ED465009AB3CC /* DIContainer.swift */; };
 		C319E82C2F0ED4B6009AB3CC /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E82B2F0ED4B6009AB3CC /* AppConfig.swift */; };
 		C319E82E2F0ED6C2009AB3CC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C319E82D2F0ED6C2009AB3CC /* .gitignore */; };
-		C319E8332F113097009AB3CC /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319E8322F113097009AB3CC /* CustomLoadingView.swift */; };
-		C33DFDD62F115889006FA7EE /* CustomPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDD52F115889006FA7EE /* CustomPopupView.swift */; };
-		C33DFDD82F115B06006FA7EE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDD72F115B06006FA7EE /* HomeView.swift */; };
-		C33DFDDB2F115B2C006FA7EE /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDDA2F115B2C006FA7EE /* SplashView.swift */; };
-		C33DFDDD2F115BB4006FA7EE /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDDC2F115BB4006FA7EE /* SplashViewModel.swift */; };
+		C33DFDE02F116D1E006FA7EE /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDDF2F116D1E006FA7EE /* Login.swift */; };
+		C33DFDE22F116D6A006FA7EE /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDE12F116D6A006FA7EE /* AuthRepository.swift */; };
+		C33DFDE42F116D80006FA7EE /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDE32F116D80006FA7EE /* LoginResult.swift */; };
+		C33DFDE62F116DE2006FA7EE /* AuthRepositoryIMPL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDE52F116DE2006FA7EE /* AuthRepositoryIMPL.swift */; };
+		C33DFDE92F116E10006FA7EE /* LoginRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDE82F116E10006FA7EE /* LoginRequestDTO.swift */; };
+		C33DFDEC2F116E52006FA7EE /* LoginResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDEB2F116E52006FA7EE /* LoginResponseDTO.swift */; };
+		C33DFDEE2F1170A4006FA7EE /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDED2F1170A4006FA7EE /* LoginUseCase.swift */; };
+		C33DFDF12F1185F2006FA7EE /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDEF2F1185F1006FA7EE /* CustomLoadingView.swift */; };
+		C33DFDF22F1185F2006FA7EE /* CustomPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFDF02F1185F2006FA7EE /* CustomPopupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,11 +142,15 @@
 		C319E82F2F0ED6F1009AB3CC /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		C319E8302F0ED6FB009AB3CC /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		C319E8312F112791009AB3CC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C319E8322F113097009AB3CC /* CustomLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
-		C33DFDD52F115889006FA7EE /* CustomPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopupView.swift; sourceTree = "<group>"; };
-		C33DFDD72F115B06006FA7EE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		C33DFDDA2F115B2C006FA7EE /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		C33DFDDC2F115BB4006FA7EE /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		C33DFDDF2F116D1E006FA7EE /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		C33DFDE12F116D6A006FA7EE /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		C33DFDE32F116D80006FA7EE /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		C33DFDE52F116DE2006FA7EE /* AuthRepositoryIMPL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryIMPL.swift; sourceTree = "<group>"; };
+		C33DFDE82F116E10006FA7EE /* LoginRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestDTO.swift; sourceTree = "<group>"; };
+		C33DFDEB2F116E52006FA7EE /* LoginResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDTO.swift; sourceTree = "<group>"; };
+		C33DFDED2F1170A4006FA7EE /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		C33DFDEF2F1185F1006FA7EE /* CustomLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
+		C33DFDF02F1185F2006FA7EE /* CustomPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPopupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,19 +260,9 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		C319E7972F0B3A07009AB3CC /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				C33DFDD72F115B06006FA7EE /* HomeView.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
 		C319E7982F0B3A15009AB3CC /* App */ = {
 			isa = PBXGroup;
 			children = (
-				C33DFDD92F115B24006FA7EE /* Splash */,
-				C319E7972F0B3A07009AB3CC /* Home */,
 				C319E7962F0B39FF009AB3CC /* Auth */,
 			);
 			path = App;
@@ -273,6 +271,8 @@
 		C319E7992F0B3A1B009AB3CC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C33DFDEF2F1185F1006FA7EE /* CustomLoadingView.swift */,
+				C33DFDF02F1185F2006FA7EE /* CustomPopupView.swift */,
 				C319E7A12F0B3AD8009AB3CC /* CustomButton.swift */,
 				C319E7B02F0B3EDF009AB3CC /* CustomTextField.swift */,
 				C319E7B42F0B4144009AB3CC /* CustomPasswordTextField.swift */,
@@ -280,8 +280,6 @@
 				C319E7DE2F0E239D009AB3CC /* CustomRadioButton.swift */,
 				C319E7EB2F0EB2D1009AB3CC /* CustomCheckBox.swift */,
 				C319E7E02F0E95A7009AB3CC /* TitledSection.swift */,
-				C319E8322F113097009AB3CC /* CustomLoadingView.swift */,
-				C33DFDD52F115889006FA7EE /* CustomPopupView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -415,6 +413,7 @@
 		C319E7FC2F0EC63D009AB3CC /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				C33DFDDE2F116D0C006FA7EE /* Auth */,
 				C319E8232F0ED03D009AB3CC /* User */,
 				C319E7FD2F0EC682009AB3CC /* Error */,
 			);
@@ -462,6 +461,7 @@
 		C319E80A2F0EC8DB009AB3CC /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				C33DFDE72F116E08006FA7EE /* Auth */,
 				C319E8142F0ECA78009AB3CC /* User */,
 			);
 			path = Request;
@@ -470,6 +470,7 @@
 		C319E80B2F0EC8E0009AB3CC /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				C33DFDEA2F116E47006FA7EE /* Auth */,
 				C319E8112F0ECA68009AB3CC /* User */,
 				C319E80E2F0ECA34009AB3CC /* Common */,
 			);
@@ -504,6 +505,7 @@
 			isa = PBXGroup;
 			children = (
 				C319E81A2F0ECB90009AB3CC /* UserRepository.swift */,
+				C33DFDE12F116D6A006FA7EE /* AuthRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -512,6 +514,7 @@
 			isa = PBXGroup;
 			children = (
 				C319E81D2F0ECBBC009AB3CC /* UserRepositoryIMPL.swift */,
+				C33DFDE52F116DE2006FA7EE /* AuthRepositoryIMPL.swift */,
 			);
 			path = RepositoryIMPL;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 			isa = PBXGroup;
 			children = (
 				C319E8212F0ECC34009AB3CC /* CreateUserUseCase.swift */,
+				C33DFDED2F1170A4006FA7EE /* LoginUseCase.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -559,13 +563,29 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
-		C33DFDD92F115B24006FA7EE /* Splash */ = {
+		C33DFDDE2F116D0C006FA7EE /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				C33DFDDA2F115B2C006FA7EE /* SplashView.swift */,
-				C33DFDDC2F115BB4006FA7EE /* SplashViewModel.swift */,
+				C33DFDDF2F116D1E006FA7EE /* Login.swift */,
+				C33DFDE32F116D80006FA7EE /* LoginResult.swift */,
 			);
-			path = Splash;
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C33DFDE72F116E08006FA7EE /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C33DFDE82F116E10006FA7EE /* LoginRequestDTO.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C33DFDEA2F116E47006FA7EE /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C33DFDEB2F116E52006FA7EE /* LoginResponseDTO.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -652,26 +672,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				C319E8052F0EC81C009AB3CC /* EndPoint.swift in Sources */,
+				C33DFDE92F116E10006FA7EE /* LoginRequestDTO.swift in Sources */,
+				C33DFDF22F1185F2006FA7EE /* CustomPopupView.swift in Sources */,
 				C319E7D32F0E180E009AB3CC /* SalaryRange.swift in Sources */,
 				C319E8082F0EC868009AB3CC /* LaborLawAPI.swift in Sources */,
+				C33DFDE02F116D1E006FA7EE /* Login.swift in Sources */,
 				C319E7E52F0E9DCB009AB3CC /* Array+Extension.swift in Sources */,
 				C319E81E2F0ECBBC009AB3CC /* UserRepositoryIMPL.swift in Sources */,
+				C33DFDE42F116D80006FA7EE /* LoginResult.swift in Sources */,
 				C319E8102F0ECA3E009AB3CC /* LaborLawResponseWrapper.swift in Sources */,
 				C319E7A22F0B3AD8009AB3CC /* CustomButton.swift in Sources */,
 				C319E7F62F0EC5CD009AB3CC /* APIError.swift in Sources */,
 				C319E7A42F0B3B17009AB3CC /* Font+Extension.swift in Sources */,
 				C319E8182F0ECADD009AB3CC /* LaborLawEndpoints.swift in Sources */,
-				C319E8332F113097009AB3CC /* CustomLoadingView.swift in Sources */,
 				C319E7FB2F0EC613009AB3CC /* LaborLawNetworkError.swift in Sources */,
-				C33DFDDB2F115B2C006FA7EE /* SplashView.swift in Sources */,
 				C319E80D2F0EC92D009AB3CC /* CreateUserRequestDTO.swift in Sources */,
 				C319E7B12F0B3EDF009AB3CC /* CustomTextField.swift in Sources */,
 				C319E7E12F0E95A7009AB3CC /* TitledSection.swift in Sources */,
 				C319E7DF2F0E239D009AB3CC /* CustomRadioButton.swift in Sources */,
+				C33DFDF12F1185F2006FA7EE /* CustomLoadingView.swift in Sources */,
+				C33DFDE62F116DE2006FA7EE /* AuthRepositoryIMPL.swift in Sources */,
 				C319E7DD2F0E20A1009AB3CC /* InputUserInfoViewModel.swift in Sources */,
 				C319E7C72F0E13EA009AB3CC /* InputIDPWViewModel.swift in Sources */,
 				C319E7E32F0E98D8009AB3CC /* String+Extension.swift in Sources */,
-				C33DFDD82F115B06006FA7EE /* HomeView.swift in Sources */,
 				C319E7CC2F0E1707009AB3CC /* SignUpViewModel.swift in Sources */,
 				C319E7C12F0E1203009AB3CC /* Destination.swift in Sources */,
 				C319E7C32F0E1249009AB3CC /* TopBarView.swift in Sources */,
@@ -682,7 +705,7 @@
 				C319E7DB2F0E209B009AB3CC /* InputUserInfoView.swift in Sources */,
 				C319E7CA2F0E1481009AB3CC /* RegexHelper.swift in Sources */,
 				C319E82C2F0ED4B6009AB3CC /* AppConfig.swift in Sources */,
-				C33DFDDD2F115BB4006FA7EE /* SplashViewModel.swift in Sources */,
+				C33DFDEC2F116E52006FA7EE /* LoginResponseDTO.swift in Sources */,
 				C319E7C52F0E13E2009AB3CC /* InputIDPWView.swift in Sources */,
 				C319E8162F0ECAB6009AB3CC /* Encodable+Extension.swift in Sources */,
 				C319E7EC2F0EB2D1009AB3CC /* CustomCheckBox.swift in Sources */,
@@ -698,13 +721,14 @@
 				C319E7D72F0E1825009AB3CC /* LawCode.swift in Sources */,
 				C319E7BA2F0B5245009AB3CC /* AuthMainView.swift in Sources */,
 				C319E7B32F0B3FCA009AB3CC /* View+Extension.swift in Sources */,
+				C33DFDE22F116D6A006FA7EE /* AuthRepository.swift in Sources */,
 				C319E8252F0ED055009AB3CC /* SignUpResult.swift in Sources */,
 				C319E7BF2F0E11EA009AB3CC /* Coordinator.swift in Sources */,
+				C33DFDEE2F1170A4006FA7EE /* LoginUseCase.swift in Sources */,
 				C319E7EA2F0EA16B009AB3CC /* SelectLawViewModel.swift in Sources */,
 				C319E7D12F0E17FE009AB3CC /* Gender.swift in Sources */,
 				C319E7852F0B39BB009AB3CC /* LaborLawAppApp.swift in Sources */,
 				C319E7B52F0B4144009AB3CC /* CustomPasswordTextField.swift in Sources */,
-				C33DFDD62F115889006FA7EE /* CustomPopupView.swift in Sources */,
 				C319E8222F0ECC34009AB3CC /* CreateUserUseCase.swift in Sources */,
 				C319E7B72F0B453C009AB3CC /* LoginViewModel.swift in Sources */,
 			);

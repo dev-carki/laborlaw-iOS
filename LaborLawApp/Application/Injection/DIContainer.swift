@@ -29,11 +29,19 @@ extension Container {
     var userRepository: Factory<UserRepository> {
         Factory(self) { UserRepositoryIMPL(api: self.labowLawAPI()) }
     }
+    
+    var authRepository: Factory<AuthRepository> {
+        Factory(self) { AuthRepositoryIMPL(api: self.labowLawAPI()) }
+    }
 }
 
 // MARK: UseCase
 extension Container {
     var createUserUseCase: Factory<CreateUserUseCase> {
         Factory(self) { CreateUserUseCase(repository: self.userRepository()) }
+    }
+    
+    var loginUseCase: Factory<LoginUseCase> {
+        Factory(self) { LoginUseCase(repository: self.authRepository()) }
     }
 }

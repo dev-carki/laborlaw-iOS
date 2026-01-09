@@ -7,7 +7,6 @@
 
 import Foundation
 
-// MARK: - Welcome
 struct CreateUserResponseDTO: Codable {
     let id: Int
     let email: String
