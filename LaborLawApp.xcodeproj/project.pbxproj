@@ -260,17 +260,9 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		C319E7972F0B3A07009AB3CC /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		C319E7982F0B3A15009AB3CC /* App */ = {
 			isa = PBXGroup;
 			children = (
-				C319E7972F0B3A07009AB3CC /* Main */,
 				C319E7962F0B39FF009AB3CC /* Auth */,
 			);
 			path = App;
