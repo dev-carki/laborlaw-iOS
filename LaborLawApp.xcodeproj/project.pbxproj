@@ -132,6 +132,7 @@
 		C319E82D2F0ED6C2009AB3CC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C319E82F2F0ED6F1009AB3CC /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		C319E8302F0ED6FB009AB3CC /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		C319E8312F112791009AB3CC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +151,7 @@
 		C319E7782F0B39BB009AB3CC = {
 			isa = PBXGroup;
 			children = (
+				C319E8312F112791009AB3CC /* README.md */,
 				C319E82D2F0ED6C2009AB3CC /* .gitignore */,
 				C319E7832F0B39BB009AB3CC /* LaborLawApp */,
 				C319E7822F0B39BB009AB3CC /* Products */,
