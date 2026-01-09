@@ -12,7 +12,7 @@ struct LaborLawAppApp: App {
     var body: some Scene {
         WindowGroup {
             //LoginView()
-            InputIDPWView()
+            LoginView()
         }
     }
 }

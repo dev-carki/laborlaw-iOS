@@ -24,3 +24,17 @@ extension LaborLawEndpoints {
         }
     }
 }
+
+// MARK: Auth
+extension LaborLawEndpoints {
+    enum Auth: EndPoint {
+        case login
+        
+        var url: String {
+            switch self {
+            case .login:
+                return "/api/v1/login"
+            }
+        }
+    }
+}
