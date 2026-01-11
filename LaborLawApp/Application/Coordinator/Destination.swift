@@ -12,7 +12,8 @@ enum Destination {
     case inputIDPW
     case inputUserInfo(signUpViewModel: SignUpViewModel)
     case selectLaw(signUpViewModel: SignUpViewModel)
-//    case home
+    case home
+    case chat
 //    case showMenuBoard
 //    case createMenuBoard
 //    case addMenuItem(categoryToEdit: MenuCategory? = nil, onComplete: (MenuCategory) -> Void)
@@ -30,6 +31,10 @@ enum Destination {
             InputUserInfoView(viewModel: InputUserInfoViewModel(signUpViewModel: signUpVieModel))
         case .selectLaw(var signUpVieModel):
             SelectLawView(viewModel: SelectLawViewModel(signUpViewModel: signUpVieModel))
+        case .home:
+            HomeView()
+        case .chat:
+            ChatView()
 //        case .join:
 //            CreateStoreView()
 //            
@@ -46,6 +51,7 @@ enum Destination {
 //            AddMenuItemView(categoryToEdit: categoryToEdit, onComplete: onComplete)
 //        case .policy(let onClickAgree, let type):
 //            PolicyView(vm: PolicyVM(type: type), onClickAgree: onClickAgree)
+
         }
     }
 }

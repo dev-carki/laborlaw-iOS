@@ -10,6 +10,7 @@ import Alamofire
 import Factory
 
 class LaborLawNetworkService: BaseNetworkservice {
+    @Injected(\.userDefaultsManager) var userDefaultsManager
     
     private func afErrorConverter(_ afError: AFError) -> LaborLawNetworkError {
         return LaborLawNetworkError.AFERROR
@@ -39,9 +40,9 @@ class LaborLawNetworkService: BaseNetworkservice {
         var headers: [String: String] = [:]
         
         // MARK: Header Param 필요시
-//        if auth, !userDefaultsManager.accessToken.isEmpty {
-//            headers["Authorization"] = "Bearer \(userDefaultsManager.accessToken)"
-//        }
+        if auth, !userDefaultsManager.accessToken.isEmpty {
+            headers["Authorization"] = "Bearer \(userDefaultsManager.accessToken)"
+        }
         
         return await request(host, url: url, auth: auth, method: .post, headers: headers, parameters: parameters, httpBody: httpBody).mapError {
             return self.decodeError($0)

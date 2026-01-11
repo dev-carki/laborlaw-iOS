@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @StateObject var coordinator = Coordinator(isRoot: true)
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ZStack {
+                VStack(spacing: 0) {
+                    coordinator.navigationLinkSection()
+                    
+                    TopBarView(type: .none, text: "") {
+                        
+                    }
+                    
+                    CustomButton(text: "채팅뷰") {
+                        self.coordinator.push(destination: .chat)
+                    }
+                }
+            }
+        }
+        .navigationViewStyle(.stack)
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden()
     }
 }
 

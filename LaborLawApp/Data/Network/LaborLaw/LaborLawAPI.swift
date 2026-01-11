@@ -17,6 +17,14 @@ class LaborLawAPI {
     }
 }
 
+// MARK: Chat
+extension LaborLawAPI {
+    func chat(_ request: ChatRequestDTO) async -> Result<LaborLawResponseWrapper<ChatResponseDTO>, LaborLawNetworkError> {
+        let body = request.toDictionary()
+        return await self.networkService.post(self.host, url: LaborLawEndpoints.RAG.chat.url, auth: true, httpBody: body)
+    }
+}
+
 // MARK: User
 extension LaborLawAPI {
     func createUser(_ request: CreateUserRequestDTO) async -> Result<LaborLawResponseWrapper<CreateUserResponseDTO>, LaborLawNetworkError> {
@@ -32,11 +40,3 @@ extension LaborLawAPI {
         return await self.networkService.post(self.host, url: LaborLawEndpoints.Auth.login.url, httpBody: body)
     }
 }
-
-//// MARK: Auth
-//extension LaborLawAPI {
-//    func create_user(_ request: CreateStoreRequestModel) async -> Result<MenuBoardResponseWrapper<CreateStoreResponseModel>, LaborLawNetworkError> {
-//        let body = request.toDictionary()
-//        return await self.networkService.post(self.host, url: CodeitEndpoints.Store.CreateStore.url, httpBody: body)
-//    }
-//}

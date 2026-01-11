@@ -8,5 +8,5 @@
 import Foundation
 
 protocol AuthRepository {
-    func login(_ request: Login) async -> Result<LoginResult, LaborLawNetworkError>
+    func login(_ request: Login) async -> Result<LoginResult?, LaborLawNetworkError>
 }

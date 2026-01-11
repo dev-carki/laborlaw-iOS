@@ -12,6 +12,9 @@ struct LaborLawAppApp: App {
     @StateObject var coordinator = Coordinator(isRoot: true)
     
     var body: some Scene {
+//        WindowGroup {
+//            ChatView()
+//        }
         WindowGroup {
             NavigationView {
                 ZStack {
