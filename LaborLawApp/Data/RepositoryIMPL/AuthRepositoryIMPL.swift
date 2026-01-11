@@ -14,7 +14,7 @@ class AuthRepositoryIMPL: AuthRepository {
         self.api = api
     }
     
-    func login(_ request: Login) async -> Result<LoginResult, LaborLawNetworkError> {
+    func login(_ request: Login) async -> Result<LoginResult?, LaborLawNetworkError> {
         let dto = LoginRequestDTO(from: request)
         
         let result = await api.login(dto)

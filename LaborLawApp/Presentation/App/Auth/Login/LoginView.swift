@@ -21,6 +21,8 @@ struct LoginView: View {
                     CustomButton(text: "로그인") {
                         Task {
                             await viewModel.login()
+                            
+                            print("isLoginSuccess: ", viewModel.isLoginSuccess)
                         }
                     }
                     .padding(.top, 8)
@@ -77,6 +79,11 @@ struct LoginView: View {
                 }
             }
         }
+        .onChange(of: $viewModel.isLoginSuccess.wrappedValue, perform: { value in
+            if value {
+                coordinator.moveToMain()
+            }
+        })
         .navigationViewStyle(.stack)
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden()

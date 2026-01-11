@@ -8,7 +8,20 @@
 import Foundation
 
 final class LaborLawEndpoints {
-    
+}
+
+// MARK: Chat
+extension LaborLawEndpoints {
+    enum RAG: EndPoint {
+        case chat
+        
+        var url: String {
+            switch self {
+            case .chat:
+                return "/api/v1/chat"
+            }
+        }
+    }
 }
 
 // MARK: User

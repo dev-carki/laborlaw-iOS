@@ -13,6 +13,7 @@ enum NetworkError: String, Error {
     case AFERROR = "AFERROR"
     case PARSING = "PARSING"
     
+    case NO_DATA = "AUTH_404_1"
 }
 
 extension NetworkError {
@@ -24,6 +25,8 @@ extension NetworkError {
             return "네트워크를 확인해주세요."
         case .PARSING:
             return "정확한 정보를 입력 후 다시 시도해주세요."
+        case .NO_DATA:
+            return "유효하지 않은 인증 토큰입니다."
         }
     }
 }

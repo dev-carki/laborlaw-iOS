@@ -12,6 +12,10 @@ extension Container {
     var baseNetworkService: Factory<BaseNetworkservice> {
         Factory(self) { BaseNetworkservice() }
     }
+    
+    var userDefaultsManager: Factory<UserDefaultsManager> {
+        Factory(self) { UserDefaultsManager() }
+    }
 }
 
 extension Container {
@@ -33,6 +37,10 @@ extension Container {
     var authRepository: Factory<AuthRepository> {
         Factory(self) { AuthRepositoryIMPL(api: self.labowLawAPI()) }
     }
+    
+    var chatRepository: Factory<ChatRepository> {
+        Factory(self) { ChatRepositoryIMPL(api: self.labowLawAPI()) }
+    }
 }
 
 // MARK: UseCase
@@ -43,5 +51,9 @@ extension Container {
     
     var loginUseCase: Factory<LoginUseCase> {
         Factory(self) { LoginUseCase(repository: self.authRepository()) }
+    }
+    
+    var chatUseCase: Factory<ChatUseCase> {
+        Factory(self) { ChatUseCase(repository: self.chatRepository()) }
     }
 }
