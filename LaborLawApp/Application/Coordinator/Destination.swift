@@ -13,7 +13,8 @@ enum Destination {
     case inputUserInfo(signUpViewModel: SignUpViewModel)
     case selectLaw(signUpViewModel: SignUpViewModel)
     case home
-    case chat
+    case chatList
+    case chat(viewModel: ChatViewModel)
 //    case showMenuBoard
 //    case createMenuBoard
 //    case addMenuItem(categoryToEdit: MenuCategory? = nil, onComplete: (MenuCategory) -> Void)
@@ -33,8 +34,10 @@ enum Destination {
             SelectLawView(viewModel: SelectLawViewModel(signUpViewModel: signUpVieModel))
         case .home:
             HomeView()
-        case .chat:
-            ChatView()
+        case .chatList:
+            ChatListView()
+        case .chat(let viewModel):
+            ChatView(viewModel: viewModel)
 //        case .join:
 //            CreateStoreView()
 //            

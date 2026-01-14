@@ -10,7 +10,7 @@ import SwiftUI
 struct ChatView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @StateObject var coordinator = Coordinator()
-    @StateObject private var viewModel = ChatViewModel()
+    @StateObject var viewModel: ChatViewModel
     
     var body: some View {
         NavigationView {
@@ -61,5 +61,5 @@ struct ChatView: View {
 }
 
 #Preview {
-    ChatView()
+    ChatView(viewModel: ChatViewModel(conversationId: nil))
 }

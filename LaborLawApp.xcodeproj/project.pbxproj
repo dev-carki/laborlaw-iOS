@@ -92,6 +92,15 @@
 		C33DFE172F135639006FA7EE /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFE162F135639006FA7EE /* UserDefaultsKeys.swift */; };
 		C33DFE192F135CBE006FA7EE /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFE182F135CBE006FA7EE /* ChatBubble.swift */; };
 		C33DFE1B2F135EE8006FA7EE /* InputChatBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFE1A2F135EE8006FA7EE /* InputChatBox.swift */; };
+		C33DFE1E2F171E82006FA7EE /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFE1D2F171E82006FA7EE /* ChatListView.swift */; };
+		C33DFE202F171E89006FA7EE /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFE1F2F171E89006FA7EE /* ChatListViewModel.swift */; };
+		C33DFE252F171F3E006FA7EE /* ChatListResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFE242F171F3E006FA7EE /* ChatListResponseDTO.swift */; };
+		C33DFE272F171FE6006FA7EE /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFE262F171FE6006FA7EE /* ChatList.swift */; };
+		C33DFE292F172097006FA7EE /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFE282F172097006FA7EE /* Date+Extension.swift */; };
+		C33DFE2B2F1721CF006FA7EE /* GetChatListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFE2A2F1721CF006FA7EE /* GetChatListUseCase.swift */; };
+		C33DFE2D2F172474006FA7EE /* ChatListBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFE2C2F172474006FA7EE /* ChatListBox.swift */; };
+		C33DFE2F2F17F47D006FA7EE /* ChatDetailResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFE2E2F17F47D006FA7EE /* ChatDetailResponseDTO.swift */; };
+		C33DFE312F17F7A3006FA7EE /* GetChatDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DFE302F17F7A3006FA7EE /* GetChatDetailUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -183,6 +192,15 @@
 		C33DFE162F135639006FA7EE /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 		C33DFE182F135CBE006FA7EE /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		C33DFE1A2F135EE8006FA7EE /* InputChatBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputChatBox.swift; sourceTree = "<group>"; };
+		C33DFE1D2F171E82006FA7EE /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		C33DFE1F2F171E89006FA7EE /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
+		C33DFE242F171F3E006FA7EE /* ChatListResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListResponseDTO.swift; sourceTree = "<group>"; };
+		C33DFE262F171FE6006FA7EE /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
+		C33DFE282F172097006FA7EE /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		C33DFE2A2F1721CF006FA7EE /* GetChatListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetChatListUseCase.swift; sourceTree = "<group>"; };
+		C33DFE2C2F172474006FA7EE /* ChatListBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListBox.swift; sourceTree = "<group>"; };
+		C33DFE2E2F17F47D006FA7EE /* ChatDetailResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailResponseDTO.swift; sourceTree = "<group>"; };
+		C33DFE302F17F7A3006FA7EE /* GetChatDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetChatDetailUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +335,7 @@
 				C319E7E02F0E95A7009AB3CC /* TitledSection.swift */,
 				C33DFE182F135CBE006FA7EE /* ChatBubble.swift */,
 				C33DFE1A2F135EE8006FA7EE /* InputChatBox.swift */,
+				C33DFE2C2F172474006FA7EE /* ChatListBox.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -350,6 +369,7 @@
 				C319E7E22F0E98D8009AB3CC /* String+Extension.swift */,
 				C319E7E42F0E9DCB009AB3CC /* Array+Extension.swift */,
 				C319E8152F0ECAB6009AB3CC /* Encodable+Extension.swift */,
+				C33DFE282F172097006FA7EE /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -634,6 +654,7 @@
 		C33DFDF42F1187CE006FA7EE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C33DFE1C2F171E79006FA7EE /* ChatList */,
 				C33DFDFC2F134939006FA7EE /* Chat */,
 				C33DFDF52F1187D6006FA7EE /* HomeView.swift */,
 			);
@@ -663,6 +684,7 @@
 			children = (
 				C33DFE022F134DCF006FA7EE /* ChatMessage.swift */,
 				C33DFE0C2F135306006FA7EE /* ChatAnswer.swift */,
+				C33DFE262F171FE6006FA7EE /* ChatList.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -679,6 +701,8 @@
 			isa = PBXGroup;
 			children = (
 				C33DFE082F134F2F006FA7EE /* ChatResponseDTO.swift */,
+				C33DFE242F171F3E006FA7EE /* ChatListResponseDTO.swift */,
+				C33DFE2E2F17F47D006FA7EE /* ChatDetailResponseDTO.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -687,6 +711,8 @@
 			isa = PBXGroup;
 			children = (
 				C33DFE112F13554C006FA7EE /* ChatUseCase.swift */,
+				C33DFE2A2F1721CF006FA7EE /* GetChatListUseCase.swift */,
+				C33DFE302F17F7A3006FA7EE /* GetChatDetailUseCase.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -698,6 +724,15 @@
 				C33DFE162F135639006FA7EE /* UserDefaultsKeys.swift */,
 			);
 			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		C33DFE1C2F171E79006FA7EE /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				C33DFE1D2F171E82006FA7EE /* ChatListView.swift */,
+				C33DFE1F2F171E89006FA7EE /* ChatListViewModel.swift */,
+			);
+			path = ChatList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -788,10 +823,13 @@
 				C33DFDE92F116E10006FA7EE /* LoginRequestDTO.swift in Sources */,
 				C33DFE0F2F13536C006FA7EE /* ChatRepositoryIMPL.swift in Sources */,
 				C33DFDF22F1185F2006FA7EE /* CustomPopupView.swift in Sources */,
+				C33DFE272F171FE6006FA7EE /* ChatList.swift in Sources */,
 				C33DFDFB2F1187ED006FA7EE /* SplashViewModel.swift in Sources */,
 				C33DFDFE2F134943006FA7EE /* ChatView.swift in Sources */,
 				C319E7D32F0E180E009AB3CC /* SalaryRange.swift in Sources */,
+				C33DFE312F17F7A3006FA7EE /* GetChatDetailUseCase.swift in Sources */,
 				C319E8082F0EC868009AB3CC /* LaborLawAPI.swift in Sources */,
+				C33DFE2D2F172474006FA7EE /* ChatListBox.swift in Sources */,
 				C33DFDE02F116D1E006FA7EE /* Login.swift in Sources */,
 				C319E7E52F0E9DCB009AB3CC /* Array+Extension.swift in Sources */,
 				C319E81E2F0ECBBC009AB3CC /* UserRepositoryIMPL.swift in Sources */,
@@ -804,6 +842,7 @@
 				C319E7A22F0B3AD8009AB3CC /* CustomButton.swift in Sources */,
 				C319E7F62F0EC5CD009AB3CC /* APIError.swift in Sources */,
 				C319E7A42F0B3B17009AB3CC /* Font+Extension.swift in Sources */,
+				C33DFE2F2F17F47D006FA7EE /* ChatDetailResponseDTO.swift in Sources */,
 				C319E8182F0ECADD009AB3CC /* LaborLawEndpoints.swift in Sources */,
 				C319E7FB2F0EC613009AB3CC /* LaborLawNetworkError.swift in Sources */,
 				C319E80D2F0EC92D009AB3CC /* CreateUserRequestDTO.swift in Sources */,
@@ -817,6 +856,7 @@
 				C319E7C72F0E13EA009AB3CC /* InputIDPWViewModel.swift in Sources */,
 				C33DFE152F135633006FA7EE /* UserDefaultsManager.swift in Sources */,
 				C319E7E32F0E98D8009AB3CC /* String+Extension.swift in Sources */,
+				C33DFE292F172097006FA7EE /* Date+Extension.swift in Sources */,
 				C319E7CC2F0E1707009AB3CC /* SignUpViewModel.swift in Sources */,
 				C319E7C12F0E1203009AB3CC /* Destination.swift in Sources */,
 				C319E7C32F0E1249009AB3CC /* TopBarView.swift in Sources */,
@@ -825,6 +865,7 @@
 				C33DFE0D2F135306006FA7EE /* ChatAnswer.swift in Sources */,
 				C319E7FF2F0EC689009AB3CC /* NetworkError.swift in Sources */,
 				C319E7F42F0EC5B2009AB3CC /* BaseNetworkService.swift in Sources */,
+				C33DFE202F171E89006FA7EE /* ChatListViewModel.swift in Sources */,
 				C319E7DB2F0E209B009AB3CC /* InputUserInfoView.swift in Sources */,
 				C319E7CA2F0E1481009AB3CC /* RegexHelper.swift in Sources */,
 				C319E82C2F0ED4B6009AB3CC /* AppConfig.swift in Sources */,
@@ -836,6 +877,7 @@
 				C319E7F92F0EC5F4009AB3CC /* LaborLawNetworkService.swift in Sources */,
 				C319E7BC2F0B524C009AB3CC /* AuthMainViewModel.swift in Sources */,
 				C319E8132F0ECA74009AB3CC /* CreateUserResponseDTO.swift in Sources */,
+				C33DFE2B2F1721CF006FA7EE /* GetChatListUseCase.swift in Sources */,
 				C319E7D52F0E181B009AB3CC /* EmploymentType.swift in Sources */,
 				C319E7CE2F0E1723009AB3CC /* CreateUser.swift in Sources */,
 				C319E79B2F0B3A40009AB3CC /* LoginView.swift in Sources */,
@@ -849,7 +891,9 @@
 				C33DFDE22F116D6A006FA7EE /* AuthRepository.swift in Sources */,
 				C319E8252F0ED055009AB3CC /* SignUpResult.swift in Sources */,
 				C319E7BF2F0E11EA009AB3CC /* Coordinator.swift in Sources */,
+				C33DFE1E2F171E82006FA7EE /* ChatListView.swift in Sources */,
 				C33DFDEE2F1170A4006FA7EE /* LoginUseCase.swift in Sources */,
+				C33DFE252F171F3E006FA7EE /* ChatListResponseDTO.swift in Sources */,
 				C319E7EA2F0EA16B009AB3CC /* SelectLawViewModel.swift in Sources */,
 				C319E7D12F0E17FE009AB3CC /* Gender.swift in Sources */,
 				C33DFE032F134DCF006FA7EE /* ChatMessage.swift in Sources */,

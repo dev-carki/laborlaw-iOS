@@ -11,6 +11,14 @@ import Alamofire
 import UIKit
 import Factory
 
+enum JSONDecoderFactory {
+    static let iso8601: JSONDecoder = {
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        return decoder
+    }()
+}
+
 class BaseNetworkservice {
     let session: Session = {
         let configuration = URLSessionConfiguration.af.default
@@ -67,7 +75,10 @@ extension BaseNetworkservice {
         
         let dataTask = request
             .validate(statusCode: 200..<300)
-            .serializingDecodable(T.self)
+            .serializingDecodable(
+                T.self,
+                decoder: JSONDecoderFactory.iso8601
+            )
             
 
 
