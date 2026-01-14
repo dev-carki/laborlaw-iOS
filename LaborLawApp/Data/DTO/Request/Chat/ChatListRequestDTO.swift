@@ -1,13 +1,13 @@
 //
-//  ChatRequestDTO.swift
+//  ChatListRequestDTO.swift
 //  LaborLawApp
 //
-//  Created by Carki on 1/11/26.
+//  Created by Carki on 1/14/26.
 //
 
 import Foundation
 
-struct ChatRequestDTO: Codable {
+struct ChatListRequestDTO: Codable {
     let question: String
     let conversationId: Int?
 
@@ -17,7 +17,7 @@ struct ChatRequestDTO: Codable {
     }
 }
 
-extension ChatRequestDTO {
+extension ChatListRequestDTO {
     init(from domain: ChatAnswer) {
         self.question = domain.text
         self.conversationId = domain.conversationId

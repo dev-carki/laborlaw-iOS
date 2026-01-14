@@ -23,6 +23,16 @@ extension LaborLawAPI {
         let body = request.toDictionary()
         return await self.networkService.post(self.host, url: LaborLawEndpoints.RAG.chat.url, auth: true, httpBody: body)
     }
+    
+    func getChatList() async -> Result<LaborLawResponseWrapper<[ChatListResponseDTO]>, LaborLawNetworkError> {
+        
+        return await self.networkService.get(self.host, url: LaborLawEndpoints.RAG.chatList.url, auth: true)
+    }
+    
+    func getChatDetail(id: Int) async -> Result<LaborLawResponseWrapper<ConversationDetailResponseDTO>, LaborLawNetworkError> {
+        
+        return await self.networkService.get(self.host, url: LaborLawEndpoints.RAG.chatDetail(id: id).url, auth: true)
+    }
 }
 
 // MARK: User

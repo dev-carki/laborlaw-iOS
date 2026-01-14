@@ -56,4 +56,12 @@ extension Container {
     var chatUseCase: Factory<ChatUseCase> {
         Factory(self) { ChatUseCase(repository: self.chatRepository()) }
     }
+    
+    var getChatListUseCase: Factory<GetChatListUseCase> {
+        Factory(self) { GetChatListUseCase(repository: self.chatRepository()) }
+    }
+    
+    var getChatDetailUseCase: Factory<GetChatDetailUseCase> {
+        Factory(self) { GetChatDetailUseCase(repository: self.chatRepository()) }
+    }
 }

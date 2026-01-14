@@ -9,4 +9,5 @@ import Foundation
 
 struct ChatAnswer {
     let text: String
+    let conversationId: Int?
 }

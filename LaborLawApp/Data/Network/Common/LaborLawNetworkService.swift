@@ -31,6 +31,11 @@ class LaborLawNetworkService: BaseNetworkservice {
     func get<T>(_ host: String, url: String, auth: Bool = false, parameters: Parameters? = nil) async -> Result<T, LaborLawNetworkError> where T: Codable {
         var headers: [String: String] = [:]
         
+        // MARK: Header Param 필요시
+        if auth, !userDefaultsManager.accessToken.isEmpty {
+            headers["Authorization"] = "Bearer \(userDefaultsManager.accessToken)"
+        }
+        
         return await request(host, url: url, auth: auth, method: .get, headers: headers, parameters: parameters, httpBody: nil).mapError { apiError in
             self.decodeError(apiError)
         }

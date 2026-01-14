@@ -1,21 +1,22 @@
 //
-//  ChatUseCase.swift
+//  GetChatListUseCase.swift
 //  LaborLawApp
 //
-//  Created by Carki on 1/11/26.
+//  Created by Carki on 1/14/26.
 //
 
 import Foundation
 
-final class ChatUseCase {
+final class GetChatListUseCase {
     let repository: ChatRepository
     
     init(repository: ChatRepository) {
         self.repository = repository
     }
     
-    func execute(_ request: ChatAnswer) async -> Result<ChatAnswer, NetworkError> {
-        return await self.repository.chat(request)
+    func execute() async -> Result<[ChatList], NetworkError> {
+        return await self.repository.getChatList()
             .mapError({$0.toNetworkError()})
     }
 }
+

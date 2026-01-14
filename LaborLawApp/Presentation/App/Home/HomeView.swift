@@ -22,7 +22,7 @@ struct HomeView: View {
                     }
                     
                     CustomButton(text: "채팅뷰") {
-                        self.coordinator.push(destination: .chat)
+                        self.coordinator.push(destination: .chatList)
                     }
                 }
             }
