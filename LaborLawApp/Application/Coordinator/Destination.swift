@@ -12,9 +12,16 @@ enum Destination {
     case inputIDPW
     case inputUserInfo(signUpViewModel: SignUpViewModel)
     case selectLaw(signUpViewModel: SignUpViewModel)
+    
     case home
+    
     case chatList
     case chat(viewModel: ChatViewModel)
+    
+    case boardMain
+    case createPost
+    
+    case setting
 //    case showMenuBoard
 //    case createMenuBoard
 //    case addMenuItem(categoryToEdit: MenuCategory? = nil, onComplete: (MenuCategory) -> Void)
@@ -38,6 +45,12 @@ enum Destination {
             ChatListView()
         case .chat(let viewModel):
             ChatView(viewModel: viewModel)
+        case .boardMain:
+            BoardMainView()
+        case .createPost:
+            CreatePostView()
+        case .setting:
+            SettingView()
 //        case .join:
 //            CreateStoreView()
 //            

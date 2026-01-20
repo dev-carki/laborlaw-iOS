@@ -86,7 +86,6 @@ final class ChatViewModel: ObservableObject {
         
         switch result {
         case .success(let response):
-            // ✅ await 가능
             await streamAnswer(
                 response.text,
                 messageID: aiMessageID
@@ -102,7 +101,7 @@ final class ChatViewModel: ObservableObject {
         }
     }
     
-    
+    @MainActor
     private func startLoadingAnimation(messageID: UUID) {
         loadingTask = Task {
             var dots = ""
@@ -123,6 +122,7 @@ final class ChatViewModel: ObservableObject {
         loadingTask = nil
     }
     
+    @MainActor
     private func streamAnswer(_ text: String, messageID: UUID) async {
         updateMessage(id: messageID, text: "", state: .streaming)
         
@@ -137,6 +137,7 @@ final class ChatViewModel: ObservableObject {
         updateState(id: messageID, state: .done)
     }
     
+    @MainActor
     private func updateMessage(
         id: UUID,
         text: String,

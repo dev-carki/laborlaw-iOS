@@ -30,6 +30,32 @@ extension LaborLawEndpoints {
     }
 }
 
+// MARK: Board
+extension LaborLawEndpoints {
+    enum Board: EndPoint {
+        case getAllPost
+        case createPost
+        case getUserPost
+        case getPostDetail(id: Int)
+        case getAllCategories
+        
+        var url: String {
+            switch self {
+            case .getAllPost:
+                return "/api/v1/board/posts"
+            case .createPost:
+                return "/api/v1/board/posts"
+            case .getUserPost:
+                return "/api/v1/board/posts/me"
+            case .getPostDetail(let id):
+                return "/api/v1/board/posts/\(id)"
+            case .getAllCategories:
+                return "/api/v1/board/categories"
+            }
+        }
+    }
+}
+
 // MARK: User
 extension LaborLawEndpoints {
     enum User: EndPoint {

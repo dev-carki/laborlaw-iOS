@@ -21,31 +21,62 @@ struct SelectLawView: View {
                 VStack(spacing: 0) {
                     coordinator.navigationLinkSection()
                     
-                    TopBarView(type: .back, text: "법 선택") {
+                    TopBarView(type: .back, text: "회원가입") {
                         self.presentationMode.wrappedValue.dismiss()
                         viewModel.signUpViewModel.createUser.interestedLaws.removeAll()
                     }
                     
-                    TitledSection(title: "관심있는 법 선택 (다중선택 가능)") {
-                        VStack(spacing: 16) {
-                            ForEach(LawCode.allCases.chunked(into: 2), id: \.self) { row in
-                                HStack(spacing: 4) {
-                                    ForEach(row, id: \.self) { law in
-                                        CustomCheckBox(
-                                            text: law.displayName,
-                                            isSelected: viewModel.selectedLawCodes.contains(law)
-                                        )
-                                        .onTapGesture {
-                                            viewModel.toggleLawCode(law)
-                                        }
-                                        .frame(maxWidth: .infinity, alignment: .leading)
+                    VStack(spacing: 16) {
+                        VStack(alignment: .leading, spacing: 12) {
+                            Text("관심있는 법을 모두 선택해주세요.")
+                                .font(Font.titleText)
+                                .foregroundColor(CustomColor.customBlack)
+                            
+                            Text("선택한 법에 중점을 맞춘\n챗봇 서비스가 제공됩니다.")
+                                .font(Font.subTitleText)
+                                .foregroundColor(CustomColor.customGray700)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        ForEach(LawCode.allCases.chunked(into: 2), id: \.self) { row in
+                            HStack(spacing: 12) {
+                                ForEach(row, id: \.self) { law in
+                                    SelectBox(
+                                        iconName: law.icon,
+                                        text: law.displayName,
+                                        isSelected: viewModel.selectedLawCodes.contains(law)
+                                    )
+                                    .onTapGesture {
+                                        viewModel.toggleLawCode(law)
                                     }
+                                    .frame(maxWidth: .infinity, alignment: .leading)
                                 }
                             }
                         }
                     }
-                    .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.top, 16)
+                    .padding(.horizontal, 16)
+                    
+//                    TitledSection(title: "관심있는 법 선택 (다중선택 가능)") {
+//                        VStack(spacing: 16) {
+//                            ForEach(LawCode.allCases.chunked(into: 2), id: \.self) { row in
+//                                HStack(spacing: 4) {
+//                                    ForEach(row, id: \.self) { law in
+//                                        CustomCheckBox(
+//                                            text: law.displayName,
+//                                            isSelected: viewModel.selectedLawCodes.contains(law)
+//                                        )
+//                                        .onTapGesture {
+//                                            viewModel.toggleLawCode(law)
+//                                        }
+//                                        .frame(maxWidth: .infinity, alignment: .leading)
+//                                    }
+//                                }
+//                            }
+//                        }
+//                    }
+//                    .frame(maxWidth: .infinity, alignment: .leading)
+//                    .padding(.top, 16)
                     
                     Spacer()
                     

@@ -37,6 +37,7 @@ struct InputChatBox: View {
                 Image(systemName: "paperplane.circle.fill")
                     .resizable()
                     .scaledToFit()
+                    .foregroundColor(CustomColor.customDarkgray)
             }
             .frame(width: 24, height: 24)
             .onTapGesture {

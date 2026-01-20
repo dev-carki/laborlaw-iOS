@@ -12,19 +12,33 @@ struct CustomPopupView: View {
     let subTitleText: String?
     
     let buttonText: String
+    let cancelButtonText: String?
     let tapGesture: () -> ()
+    let cancelGesture: (() -> ())?
     
-    init(titleText: String, subTitleText: String? = nil, buttonText: String, tapGesture: @escaping () -> ()) {
+    init(
+        titleText: String,
+        subTitleText: String? = nil,
+        buttonText: String,
+        tapGesture: @escaping () -> Void,
+        cancelButtonText: String? = nil,
+        cancelGesture: (() -> Void)? = nil
+    ) {
+        if cancelButtonText != nil {
+            precondition(cancelGesture != nil, "cancelButtonText가 있으면 cancelGesture는 필수")
+        }
+
         self.titleText = titleText
         self.subTitleText = subTitleText
         self.buttonText = buttonText
         self.tapGesture = tapGesture
+        self.cancelButtonText = cancelButtonText
+        self.cancelGesture = cancelGesture
     }
     
     var body: some View {
         ZStack {
-            CustomColor.customBlack.opacity(0.3)
-                .ignoresSafeArea()
+            CustomColor.customDarkgray.opacity(0.4).ignoresSafeArea()
             
             VStack(alignment: .center, spacing: 16) {
                 Text(titleText)
@@ -37,13 +51,21 @@ struct CustomPopupView: View {
                         .font(Font.loadingViewSubTitleText)
                 }
                 
-                CustomButton(text: buttonText) {
-                    tapGesture()
+                HStack(spacing: 12) {
+                    if let cancelButtonText,
+                       let cancelGesture {
+                        CustomButton(text: cancelButtonText, backgroundColor: CustomColor.fail) {
+                            cancelGesture()
+                        }
+                    }
+                    CustomButton(text: buttonText) {
+                        tapGesture()
+                    }
                 }
             }
             .padding(.all, 16)
             .frame(maxWidth: .infinity, alignment: .center)
-            .background(CustomColor.customGray500)
+            .background(CustomColor.customGray100)
             .cornerRadius(16)
             .padding(.horizontal, 16)
         }

@@ -38,8 +38,8 @@ struct TopBarView: View {
     
     init(type: IconType = .none,
          text: String,
-         onTap: @escaping () -> Void,
          rightIconName: String? = nil,
+         onTap: @escaping () -> Void,
          onRightTap: (() -> Void)? = nil,
          rightText: String? = nil,
          onRightTextTap: (() -> Void)? = nil) {
@@ -79,9 +79,12 @@ struct TopBarView: View {
                     Spacer()
                     
                     if let rightText = rightText, let onRightTextTap = onRightTextTap {
-                        Button(rightText, action: onRightTextTap)
-                            .font(.system(size: 16, weight: .semibold))
-                            .padding(.horizontal)
+                        Text(rightText)
+                            .font(Font.buttonText)
+                            .padding(.trailing, 16)
+                            .onTapGesture {
+                                onRightTextTap()
+                            }
                     } else if let rightIconName = rightIconName, let onRightTap = onRightTap {
                         Image(systemName: rightIconName)
                             .font(.system(size: 16))
@@ -103,7 +106,9 @@ struct TopBarView: View {
 }
 
 #Preview {
-    TopBarView(text: "adsf") {
+    TopBarView(type: .back, text: "Q&A 작성", onTap: {
+        
+    }, rightText: "작성완료") {
         
     }
 }

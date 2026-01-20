@@ -13,11 +13,13 @@ struct CustomButton: View {
     
     var text: String
     var type: CustomButton.ButtonType
+    let backgroundColor: Color
     var onClick: () -> ()
     
-    init(type: CustomButton.ButtonType = .middle, text: String, onClick: @escaping () -> Void) {
+    init(type: CustomButton.ButtonType = .middle, text: String, backgroundColor: Color = CustomColor.customBlack, onClick: @escaping () -> Void) {
         self.text = text
         self.type = type
+        self.backgroundColor = backgroundColor
         self.onClick = onClick
     }
     
@@ -33,7 +35,7 @@ struct CustomButton: View {
                 .padding(.horizontal, type.horizontal)
                 .background(
                     RoundedRectangle(cornerRadius: 8)
-                        .foregroundStyle(isEnabled ? CustomColor.customBlack : CustomColor.customGray400)
+                        .foregroundStyle(isEnabled ? backgroundColor : CustomColor.customGray400)
                 )
         })
     }

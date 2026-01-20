@@ -35,6 +35,20 @@ extension LaborLawAPI {
     }
 }
 
+// MARK: Board
+extension LaborLawAPI {
+    func createPost(_ request: CreateBoardRequestDTO) async -> Result<LaborLawResponseWrapper<LaborLawEmptyResponse>, LaborLawNetworkError> {
+        let body = request.toDictionary()
+        return await self.networkService.post(self.host, url: LaborLawEndpoints.Board.createPost.url, auth: true, httpBody: body)
+    }
+    
+    func getAllCategories() async -> Result<LaborLawResponseWrapper<[GetAllCategoriesResponseDTO]>, LaborLawNetworkError> {
+        
+        return await self.networkService.get(self.host, url: LaborLawEndpoints.Board.getAllCategories.url)
+    }
+}
+
+
 // MARK: User
 extension LaborLawAPI {
     func createUser(_ request: CreateUserRequestDTO) async -> Result<LaborLawResponseWrapper<CreateUserResponseDTO>, LaborLawNetworkError> {

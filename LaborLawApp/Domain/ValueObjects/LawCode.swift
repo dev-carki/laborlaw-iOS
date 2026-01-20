@@ -25,4 +25,17 @@ enum LawCode: String, CaseIterable {
             return "근로자퇴직급여 보장법"
         }
     }
+    
+    var icon: String {
+        switch self {
+        case .incomeTax:
+            return "creditcard.fill"
+        case .laborStandards:
+            return "person.line.dotted.person.fill"
+        case .employmentInsurance:
+            return "doc.text.image.fill"
+        case .retirement_benefit:
+            return "person.2.wave.2.fill"
+        }
+    }
 }

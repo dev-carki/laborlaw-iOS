@@ -30,6 +30,7 @@ struct CustomTextField: View {
             }
             
             TextField("", text: $inputText)
+                .foregroundColor(CustomColor.customBlack)
                 .placeholder(when: $inputText.wrappedValue.isEmpty, placeholder: {
                     Text(placeHolderText ?? "")
                         .foregroundColor(CustomColor.customGray400)

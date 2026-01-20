@@ -23,7 +23,7 @@ struct InputUserInfoView: View {
                 VStack(spacing: 0) {
                     coordinator.navigationLinkSection()
                     
-                    TopBarView(type: .back, text: "추가 정보 입력") {
+                    TopBarView(type: .back, text: "회원가입") {
                         self.presentationMode.wrappedValue.dismiss()
                         viewModel.dismiss()
                         

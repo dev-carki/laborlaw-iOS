@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 enum CustomFont: String {
     case bold = "Pretendard-Bold"
@@ -16,8 +17,11 @@ enum CustomFont: String {
 
 extension Font {
     //MARK: App
+    static let titleText: Font = .custom(CustomFont.semiBold.rawValue, size: 20)
+    static let subTitleText: Font = .custom(CustomFont.regular.rawValue, size: 14)
     static let buttonText: Font = .custom(CustomFont.semiBold.rawValue, size: 16)
     static let placeholderText: Font = .custom(CustomFont.medium.rawValue, size: 14)
+    static let inputTitle: Font = .custom(CustomFont.bold.rawValue, size: 16)
     static let inputText: Font = .custom(CustomFont.regular.rawValue, size: 16)
     static let chatText: Font = .custom(CustomFont.regular.rawValue, size: 14)
     static let regularText: Font = .custom(CustomFont.regular.rawValue, size: 12)
@@ -29,4 +33,9 @@ extension Font {
     static let chatBoxDateText: Font = .custom(CustomFont.regular.rawValue, size: 14)
     // static let headline: Font = .custom(TRKFont.bold.rawValue, size: 24)
     //Pretendard.semi_bold.value, size: 16
+}
+
+extension UIFont {
+    static let inputText: UIFont = UIFont(name: CustomFont.regular.rawValue, size: 16)!
+    static let placeholderText: UIFont = UIFont(name: CustomFont.medium.rawValue, size: 14)!
 }

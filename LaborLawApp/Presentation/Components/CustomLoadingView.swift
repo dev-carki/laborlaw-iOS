@@ -28,8 +28,7 @@ struct CustomLoadingView: View {
     var body: some View {
         if isLoading {
             ZStack {
-                CustomColor.customBlack.opacity(0.3)
-                    .ignoresSafeArea()
+                CustomColor.customDarkgray.opacity(0.4).ignoresSafeArea()
                 
                 VStack(alignment: .center, spacing: 16) {
                     Text(titleText)
@@ -61,7 +60,7 @@ struct CustomLoadingView: View {
                 }
                 .padding(.all, 16)
                 .frame(maxWidth: .infinity, alignment: .center)
-                .background(CustomColor.customGray500)
+                .background(CustomColor.customGray100)
                 .cornerRadius(16)
                 .padding(.horizontal, 16)
             }
