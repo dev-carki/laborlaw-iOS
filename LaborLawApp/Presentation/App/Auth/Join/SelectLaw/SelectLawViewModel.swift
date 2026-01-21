@@ -39,7 +39,7 @@ final class SelectLawViewModel: ObservableObject {
             self.isUserCreating = true
         }
         
-        let result = await self.createUserUseCase.execute(signUpViewModel.createUser)
+        let result = await self.createUserUseCase.execute(signUpViewModel.normalizedCreateUser)
         
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }

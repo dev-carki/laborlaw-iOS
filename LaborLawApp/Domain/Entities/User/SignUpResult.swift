@@ -10,4 +10,5 @@ import Foundation
 struct SignUpResult {
     let userId: Int
     let email: String
+    let nickname: String
 }

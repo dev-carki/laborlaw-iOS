@@ -10,6 +10,7 @@ import Foundation
 struct CreateUserRequestDTO: Codable {
     let email: String
     let password: String
+    let nickname: String?
     let gender: String?
     let age: Int?
     let salary_range: String?
@@ -22,6 +23,7 @@ extension CreateUserRequestDTO {
     init(from domain: CreateUser) {
         self.email = domain.email
         self.password = domain.password
+        self.nickname = domain.nickname
         self.gender = domain.gender?.rawValue
         self.age = domain.age.flatMap { Int($0) }
         self.salary_range = domain.salaryRange?.rawValue

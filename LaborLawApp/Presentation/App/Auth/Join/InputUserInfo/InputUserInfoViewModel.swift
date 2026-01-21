@@ -10,6 +10,7 @@ import Foundation
 final class InputUserInfoViewModel: ObservableObject {
     @Published var signUpViewModel: SignUpViewModel
     
+    @Published var nicknameText: String = ""
     @Published var gender: Gender?
     
     @Published var ageText: String = ""
@@ -34,6 +35,7 @@ final class InputUserInfoViewModel: ObservableObject {
     }
     
     func dismiss() {
+        signUpViewModel.createUser.nickname = nil
         signUpViewModel.createUser.gender = nil
         signUpViewModel.createUser.age = nil
         signUpViewModel.createUser.salaryRange = nil
