@@ -31,6 +31,7 @@ extension Font {
     static let loadingViewSubTitleText: Font = .custom(CustomFont.medium.rawValue, size: 16)
     static let chatBoxTitleText: Font = .custom(CustomFont.semiBold.rawValue, size: 18)
     static let chatBoxDateText: Font = .custom(CustomFont.regular.rawValue, size: 14)
+    static let categoryTextBadge: Font = .custom(CustomFont.medium.rawValue, size: 10)
     // static let headline: Font = .custom(TRKFont.bold.rawValue, size: 24)
     //Pretendard.semi_bold.value, size: 16
 }

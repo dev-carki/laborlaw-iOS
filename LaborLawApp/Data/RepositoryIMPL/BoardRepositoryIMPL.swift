@@ -29,4 +29,12 @@ class BoardRepositoryIMPL: BoardRepository {
             wrapper.data.map { $0.toDomain() }
         }
     }
+    
+    func getAllPostList() async -> Result<[PostList], LaborLawNetworkError> {
+        let result = await api.getAllPostList()
+        
+        return result.map { wrapper in
+            wrapper.data.map { $0.toDomain() }
+        }
+    }
 }

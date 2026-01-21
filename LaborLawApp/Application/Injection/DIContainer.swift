@@ -85,4 +85,8 @@ extension Container {
     var getAllCategoriesUseCase: Factory<GetAllCategoriesUseCase> {
         Factory(self) { GetAllCategoriesUseCase(repository: self.boardRepository()) }
     }
+    
+    var getAllPostListUseCase: Factory<GetAllPostListUseCase> {
+        Factory(self) { GetAllPostListUseCase(repository: self.boardRepository()) }
+    }
 }

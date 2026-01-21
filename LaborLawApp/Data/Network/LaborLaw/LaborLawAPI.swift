@@ -46,6 +46,11 @@ extension LaborLawAPI {
         
         return await self.networkService.get(self.host, url: LaborLawEndpoints.Board.getAllCategories.url)
     }
+    
+    func getAllPostList() async -> Result<LaborLawResponseWrapper<[GetAllPostResponseDTO]>, LaborLawNetworkError> {
+        
+        return await self.networkService.get(self.host, url: LaborLawEndpoints.Board.getAllPost.url)
+    }
 }
 
 

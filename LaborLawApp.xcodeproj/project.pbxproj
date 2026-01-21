@@ -124,6 +124,10 @@
 		C3E034652F1FA3980020C2B1 /* GetAllCategoriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E034642F1FA3980020C2B1 /* GetAllCategoriesUseCase.swift */; };
 		C3E034672F1FA6490020C2B1 /* CustomSelectBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E034662F1FA6490020C2B1 /* CustomSelectBox.swift */; };
 		C3E0346A2F1FA8F00020C2B1 /* CategoryDropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E034692F1FA8F00020C2B1 /* CategoryDropdownView.swift */; };
+		C3E0346C2F206D130020C2B1 /* GetAllPostResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E0346B2F206D130020C2B1 /* GetAllPostResponseDTO.swift */; };
+		C3E0346E2F206D210020C2B1 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E0346D2F206D210020C2B1 /* PostList.swift */; };
+		C3E034702F206E8B0020C2B1 /* GetAllPostListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E0346F2F206E8B0020C2B1 /* GetAllPostListUseCase.swift */; };
+		C3E034722F206FFB0020C2B1 /* PostListBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E034712F206FFB0020C2B1 /* PostListBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -247,6 +251,10 @@
 		C3E034642F1FA3980020C2B1 /* GetAllCategoriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllCategoriesUseCase.swift; sourceTree = "<group>"; };
 		C3E034662F1FA6490020C2B1 /* CustomSelectBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSelectBox.swift; sourceTree = "<group>"; };
 		C3E034692F1FA8F00020C2B1 /* CategoryDropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDropdownView.swift; sourceTree = "<group>"; };
+		C3E0346B2F206D130020C2B1 /* GetAllPostResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllPostResponseDTO.swift; sourceTree = "<group>"; };
+		C3E0346D2F206D210020C2B1 /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
+		C3E0346F2F206E8B0020C2B1 /* GetAllPostListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllPostListUseCase.swift; sourceTree = "<group>"; };
+		C3E034712F206FFB0020C2B1 /* PostListBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,6 +395,7 @@
 				C3E034342F1E20B20020C2B1 /* SelectBox.swift */,
 				C3E034372F1F69360020C2B1 /* ContentsBoxButton.swift */,
 				C3E034682F1FA8D90020C2B1 /* CustomSelectBox */,
+				C3E034712F206FFB0020C2B1 /* PostListBox.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -837,6 +846,7 @@
 			children = (
 				C3E0344F2F1F82750020C2B1 /* BoardPostCreate.swift */,
 				C3E034622F1F9E4F0020C2B1 /* PostCategory.swift */,
+				C3E0346D2F206D210020C2B1 /* PostList.swift */,
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -846,6 +856,7 @@
 			children = (
 				C3E034522F1F83080020C2B1 /* CreateBoardResponseDTO.swift */,
 				C3E034602F1F9D690020C2B1 /* GetAllCategoriesResponseDTO.swift */,
+				C3E0346B2F206D130020C2B1 /* GetAllPostResponseDTO.swift */,
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -863,6 +874,7 @@
 			children = (
 				C3E0345E2F1F8A730020C2B1 /* CreatePostUseCase.swift */,
 				C3E034642F1FA3980020C2B1 /* GetAllCategoriesUseCase.swift */,
+				C3E0346F2F206E8B0020C2B1 /* GetAllPostListUseCase.swift */,
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -973,6 +985,7 @@
 				C319E7D32F0E180E009AB3CC /* SalaryRange.swift in Sources */,
 				C3E034482F1F72690020C2B1 /* CustomTextFieldWithTitle.swift in Sources */,
 				C33DFE312F17F7A3006FA7EE /* GetChatDetailUseCase.swift in Sources */,
+				C3E034702F206E8B0020C2B1 /* GetAllPostListUseCase.swift in Sources */,
 				C319E8082F0EC868009AB3CC /* LaborLawAPI.swift in Sources */,
 				C33DFE2D2F172474006FA7EE /* ChatListBox.swift in Sources */,
 				C33DFDE02F116D1E006FA7EE /* Login.swift in Sources */,
@@ -1026,6 +1039,7 @@
 				C33DFDEC2F116E52006FA7EE /* LoginResponseDTO.swift in Sources */,
 				C319E7C52F0E13E2009AB3CC /* InputIDPWView.swift in Sources */,
 				C33DFE062F134EA7006FA7EE /* ChatRequestDTO.swift in Sources */,
+				C3E0346C2F206D130020C2B1 /* GetAllPostResponseDTO.swift in Sources */,
 				C319E8162F0ECAB6009AB3CC /* Encodable+Extension.swift in Sources */,
 				C319E7EC2F0EB2D1009AB3CC /* CustomCheckBox.swift in Sources */,
 				C319E7F92F0EC5F4009AB3CC /* LaborLawNetworkService.swift in Sources */,
@@ -1059,6 +1073,8 @@
 				C33DFE252F171F3E006FA7EE /* ChatListResponseDTO.swift in Sources */,
 				C319E7EA2F0EA16B009AB3CC /* SelectLawViewModel.swift in Sources */,
 				C319E7D12F0E17FE009AB3CC /* Gender.swift in Sources */,
+				C3E0346E2F206D210020C2B1 /* PostList.swift in Sources */,
+				C3E034722F206FFB0020C2B1 /* PostListBox.swift in Sources */,
 				C33DFE032F134DCF006FA7EE /* ChatMessage.swift in Sources */,
 				C33DFE0B2F1351AE006FA7EE /* ChatRepository.swift in Sources */,
 				C319E7852F0B39BB009AB3CC /* LaborLawAppApp.swift in Sources */,

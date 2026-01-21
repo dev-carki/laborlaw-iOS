@@ -10,4 +10,5 @@ import Foundation
 protocol BoardRepository {
     func createPost(_ request: BoardPostCreate) async -> Result<Void, LaborLawNetworkError>
     func getAllCategories() async -> Result<[PostCategory], LaborLawNetworkError>
+    func getAllPostList() async -> Result<[PostList], LaborLawNetworkError>
 }
