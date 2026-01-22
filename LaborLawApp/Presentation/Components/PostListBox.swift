@@ -15,10 +15,21 @@ struct PostListBox: View {
     }
     
     var body: some View {
-        HStack(spacing: 12) {
+        HStack(alignment: .top, spacing: 12) {
+            Rectangle()
+                .foregroundColor(category?.color ?? CustomColor.customGray300)
+                .frame(width: 2)
+                .frame(maxHeight: .infinity)
+            
             VStack(spacing: 12) {
+                Text(data.nickName)
+                    .font(Font.postListNickNameText)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                
                 Text(data.title)
-                    .font(Font.chatBoxTitleText)
+                    .lineLimit(1)
+                    .font(Font.postListTitleText)
+                    .foregroundColor(CustomColor.customGray700)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
                 HStack {
@@ -41,22 +52,16 @@ struct PostListBox: View {
                     Spacer()
                     
                     Text(data.createdAt)
+                        .foregroundColor(CustomColor.customDarkgray)
                         .font(Font.chatBoxDateText)
                 }
             }
-            
-            VStack {
-                Image(systemName: "chevron.right")
-//                    .resizable()
-                    .padding(.all, 4)
-            }
-            .frame(width: 24, height: 24)
         }
-        .padding(.all, 8)
+        .background(CustomColor.customWhite)
         .frame(maxWidth: .infinity)
     }
 }
 
 #Preview {
-    PostListBox(data: PostList(id: 1, title: "title", category: 3, createdAt: ""))
+    PostListBox(data: PostList(id: 1, nickName: "nickname", title: "titaslkdfjnasdjflsadjflisajflisdjafilsjafiljsdilfjsaildfjsiladfjlijle", category: 3, createdAt: "2021"))
 }

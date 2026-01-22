@@ -128,6 +128,20 @@
 		C3E0346E2F206D210020C2B1 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E0346D2F206D210020C2B1 /* PostList.swift */; };
 		C3E034702F206E8B0020C2B1 /* GetAllPostListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E0346F2F206E8B0020C2B1 /* GetAllPostListUseCase.swift */; };
 		C3E034722F206FFB0020C2B1 /* PostListBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E034712F206FFB0020C2B1 /* PostListBox.swift */; };
+		C3E034752F2106F00020C2B1 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E034742F2106F00020C2B1 /* PostDetailView.swift */; };
+		C3E034772F2106F70020C2B1 /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E034762F2106F70020C2B1 /* PostDetailViewModel.swift */; };
+		C3E034792F2109300020C2B1 /* GetPostDetailResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E034782F2109300020C2B1 /* GetPostDetailResponseDTO.swift */; };
+		C3E0347B2F2109A90020C2B1 /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E0347A2F2109A90020C2B1 /* PostDetail.swift */; };
+		C3E0347D2F210DD20020C2B1 /* GetPostDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E0347C2F210DD20020C2B1 /* GetPostDetailUseCase.swift */; };
+		C3E034812F21DB040020C2B1 /* CustomReviewBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E034802F21DB040020C2B1 /* CustomReviewBox.swift */; };
+		C3E034832F21DC930020C2B1 /* InputReviewBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E034822F21DC930020C2B1 /* InputReviewBox.swift */; };
+		C3E034852F21E29B0020C2B1 /* GetReviewListResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E034842F21E29B0020C2B1 /* GetReviewListResponseDTO.swift */; };
+		C3E034872F21E2B00020C2B1 /* PostReviewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E034862F21E2B00020C2B1 /* PostReviewList.swift */; };
+		C3E034892F21E4360020C2B1 /* CreateReviewRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E034882F21E4360020C2B1 /* CreateReviewRequestDTO.swift */; };
+		C3E0348B2F21E45C0020C2B1 /* PostReviewCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E0348A2F21E45C0020C2B1 /* PostReviewCreate.swift */; };
+		C3E0348D2F21E6A70020C2B1 /* CreateReviewUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E0348C2F21E6A70020C2B1 /* CreateReviewUseCase.swift */; };
+		C3E0348F2F21E6EA0020C2B1 /* GetReviewListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E0348E2F21E6EA0020C2B1 /* GetReviewListUseCase.swift */; };
+		C3E034912F21F1270020C2B1 /* PostRefreshStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E034902F21F1270020C2B1 /* PostRefreshStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -255,6 +269,20 @@
 		C3E0346D2F206D210020C2B1 /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 		C3E0346F2F206E8B0020C2B1 /* GetAllPostListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllPostListUseCase.swift; sourceTree = "<group>"; };
 		C3E034712F206FFB0020C2B1 /* PostListBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListBox.swift; sourceTree = "<group>"; };
+		C3E034742F2106F00020C2B1 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		C3E034762F2106F70020C2B1 /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
+		C3E034782F2109300020C2B1 /* GetPostDetailResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostDetailResponseDTO.swift; sourceTree = "<group>"; };
+		C3E0347A2F2109A90020C2B1 /* PostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
+		C3E0347C2F210DD20020C2B1 /* GetPostDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostDetailUseCase.swift; sourceTree = "<group>"; };
+		C3E034802F21DB040020C2B1 /* CustomReviewBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomReviewBox.swift; sourceTree = "<group>"; };
+		C3E034822F21DC930020C2B1 /* InputReviewBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputReviewBox.swift; sourceTree = "<group>"; };
+		C3E034842F21E29B0020C2B1 /* GetReviewListResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReviewListResponseDTO.swift; sourceTree = "<group>"; };
+		C3E034862F21E2B00020C2B1 /* PostReviewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostReviewList.swift; sourceTree = "<group>"; };
+		C3E034882F21E4360020C2B1 /* CreateReviewRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReviewRequestDTO.swift; sourceTree = "<group>"; };
+		C3E0348A2F21E45C0020C2B1 /* PostReviewCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostReviewCreate.swift; sourceTree = "<group>"; };
+		C3E0348C2F21E6A70020C2B1 /* CreateReviewUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReviewUseCase.swift; sourceTree = "<group>"; };
+		C3E0348E2F21E6EA0020C2B1 /* GetReviewListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReviewListUseCase.swift; sourceTree = "<group>"; };
+		C3E034902F21F1270020C2B1 /* PostRefreshStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRefreshStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,6 +424,8 @@
 				C3E034372F1F69360020C2B1 /* ContentsBoxButton.swift */,
 				C3E034682F1FA8D90020C2B1 /* CustomSelectBox */,
 				C3E034712F206FFB0020C2B1 /* PostListBox.swift */,
+				C3E034802F21DB040020C2B1 /* CustomReviewBox.swift */,
+				C3E034822F21DC930020C2B1 /* InputReviewBox.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -475,6 +505,7 @@
 			isa = PBXGroup;
 			children = (
 				C319E7C92F0E1481009AB3CC /* RegexHelper.swift */,
+				C3E034902F21F1270020C2B1 /* PostRefreshStore.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -807,6 +838,7 @@
 		C3E034362F1F68DD0020C2B1 /* Board */ = {
 			isa = PBXGroup;
 			children = (
+				C3E034732F2106E50020C2B1 /* PostDetail */,
 				C3E0343D2F1F6BBB0020C2B1 /* CreatePost */,
 				C3E034392F1F6B9F0020C2B1 /* BoardMainView.swift */,
 				C3E0343B2F1F6BA70020C2B1 /* BoardMainViewModel.swift */,
@@ -847,6 +879,9 @@
 				C3E0344F2F1F82750020C2B1 /* BoardPostCreate.swift */,
 				C3E034622F1F9E4F0020C2B1 /* PostCategory.swift */,
 				C3E0346D2F206D210020C2B1 /* PostList.swift */,
+				C3E0347A2F2109A90020C2B1 /* PostDetail.swift */,
+				C3E034862F21E2B00020C2B1 /* PostReviewList.swift */,
+				C3E0348A2F21E45C0020C2B1 /* PostReviewCreate.swift */,
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -857,6 +892,8 @@
 				C3E034522F1F83080020C2B1 /* CreateBoardResponseDTO.swift */,
 				C3E034602F1F9D690020C2B1 /* GetAllCategoriesResponseDTO.swift */,
 				C3E0346B2F206D130020C2B1 /* GetAllPostResponseDTO.swift */,
+				C3E034782F2109300020C2B1 /* GetPostDetailResponseDTO.swift */,
+				C3E034842F21E29B0020C2B1 /* GetReviewListResponseDTO.swift */,
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -865,6 +902,7 @@
 			isa = PBXGroup;
 			children = (
 				C3E034552F1F83210020C2B1 /* CreateBoardRequestDTO.swift */,
+				C3E034882F21E4360020C2B1 /* CreateReviewRequestDTO.swift */,
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -875,6 +913,9 @@
 				C3E0345E2F1F8A730020C2B1 /* CreatePostUseCase.swift */,
 				C3E034642F1FA3980020C2B1 /* GetAllCategoriesUseCase.swift */,
 				C3E0346F2F206E8B0020C2B1 /* GetAllPostListUseCase.swift */,
+				C3E0347C2F210DD20020C2B1 /* GetPostDetailUseCase.swift */,
+				C3E0348C2F21E6A70020C2B1 /* CreateReviewUseCase.swift */,
+				C3E0348E2F21E6EA0020C2B1 /* GetReviewListUseCase.swift */,
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -886,6 +927,15 @@
 				C3E034692F1FA8F00020C2B1 /* CategoryDropdownView.swift */,
 			);
 			path = CustomSelectBox;
+			sourceTree = "<group>";
+		};
+		C3E034732F2106E50020C2B1 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C3E034742F2106F00020C2B1 /* PostDetailView.swift */,
+				C3E034762F2106F70020C2B1 /* PostDetailViewModel.swift */,
+			);
+			path = PostDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -975,10 +1025,12 @@
 				C3E034462F1F6D530020C2B1 /* SettingViewModel.swift in Sources */,
 				C33DFE192F135CBE006FA7EE /* ChatBubble.swift in Sources */,
 				C33DFDE92F116E10006FA7EE /* LoginRequestDTO.swift in Sources */,
+				C3E034812F21DB040020C2B1 /* CustomReviewBox.swift in Sources */,
 				C33DFE0F2F13536C006FA7EE /* ChatRepositoryIMPL.swift in Sources */,
 				C3E034412F1F6BD20020C2B1 /* CreatePostViewModel.swift in Sources */,
 				C33DFDF22F1185F2006FA7EE /* CustomPopupView.swift in Sources */,
 				C33DFE272F171FE6006FA7EE /* ChatList.swift in Sources */,
+				C3E034912F21F1270020C2B1 /* PostRefreshStore.swift in Sources */,
 				C33DFDFB2F1187ED006FA7EE /* SplashViewModel.swift in Sources */,
 				C33DFDFE2F134943006FA7EE /* ChatView.swift in Sources */,
 				C3E034652F1FA3980020C2B1 /* GetAllCategoriesUseCase.swift in Sources */,
@@ -989,18 +1041,23 @@
 				C319E8082F0EC868009AB3CC /* LaborLawAPI.swift in Sources */,
 				C33DFE2D2F172474006FA7EE /* ChatListBox.swift in Sources */,
 				C33DFDE02F116D1E006FA7EE /* Login.swift in Sources */,
+				C3E0348D2F21E6A70020C2B1 /* CreateReviewUseCase.swift in Sources */,
 				C319E7E52F0E9DCB009AB3CC /* Array+Extension.swift in Sources */,
 				C3E0344D2F1F753E0020C2B1 /* UITextViewWrapper.swift in Sources */,
+				C3E0347D2F210DD20020C2B1 /* GetPostDetailUseCase.swift in Sources */,
 				C319E81E2F0ECBBC009AB3CC /* UserRepositoryIMPL.swift in Sources */,
 				C33DFDE42F116D80006FA7EE /* LoginResult.swift in Sources */,
 				C33DFE172F135639006FA7EE /* UserDefaultsKeys.swift in Sources */,
+				C3E0348B2F21E45C0020C2B1 /* PostReviewCreate.swift in Sources */,
 				C319E8102F0ECA3E009AB3CC /* LaborLawResponseWrapper.swift in Sources */,
+				C3E034832F21DC930020C2B1 /* InputReviewBox.swift in Sources */,
 				C33DFDF62F1187D6006FA7EE /* HomeView.swift in Sources */,
 				C3E034532F1F83080020C2B1 /* CreateBoardResponseDTO.swift in Sources */,
 				C33DFE002F134948006FA7EE /* ChatViewModel.swift in Sources */,
 				C33DFDF92F1187E7006FA7EE /* SplashView.swift in Sources */,
 				C319E7A22F0B3AD8009AB3CC /* CustomButton.swift in Sources */,
 				C3E034612F1F9D690020C2B1 /* GetAllCategoriesResponseDTO.swift in Sources */,
+				C3E034892F21E4360020C2B1 /* CreateReviewRequestDTO.swift in Sources */,
 				C319E7F62F0EC5CD009AB3CC /* APIError.swift in Sources */,
 				C3E034582F1F884B0020C2B1 /* LaborLawEmptyResponse.swift in Sources */,
 				C3E0346A2F1FA8F00020C2B1 /* CategoryDropdownView.swift in Sources */,
@@ -1012,12 +1069,16 @@
 				C319E80D2F0EC92D009AB3CC /* CreateUserRequestDTO.swift in Sources */,
 				C319E7B12F0B3EDF009AB3CC /* CustomTextField.swift in Sources */,
 				C319E7E12F0E95A7009AB3CC /* TitledSection.swift in Sources */,
+				C3E034752F2106F00020C2B1 /* PostDetailView.swift in Sources */,
 				C319E7DF2F0E239D009AB3CC /* CustomRadioButton.swift in Sources */,
 				C33DFDF12F1185F2006FA7EE /* CustomLoadingView.swift in Sources */,
 				C33DFDE62F116DE2006FA7EE /* AuthRepositoryIMPL.swift in Sources */,
+				C3E0348F2F21E6EA0020C2B1 /* GetReviewListUseCase.swift in Sources */,
+				C3E034872F21E2B00020C2B1 /* PostReviewList.swift in Sources */,
 				C3E034632F1F9E4F0020C2B1 /* PostCategory.swift in Sources */,
 				C33DFE092F134F2F006FA7EE /* ChatResponseDTO.swift in Sources */,
 				C319E7DD2F0E20A1009AB3CC /* InputUserInfoViewModel.swift in Sources */,
+				C3E0347B2F2109A90020C2B1 /* PostDetail.swift in Sources */,
 				C319E7C72F0E13EA009AB3CC /* InputIDPWViewModel.swift in Sources */,
 				C33DFE152F135633006FA7EE /* UserDefaultsManager.swift in Sources */,
 				C319E7E32F0E98D8009AB3CC /* String+Extension.swift in Sources */,
@@ -1041,14 +1102,17 @@
 				C33DFE062F134EA7006FA7EE /* ChatRequestDTO.swift in Sources */,
 				C3E0346C2F206D130020C2B1 /* GetAllPostResponseDTO.swift in Sources */,
 				C319E8162F0ECAB6009AB3CC /* Encodable+Extension.swift in Sources */,
+				C3E034772F2106F70020C2B1 /* PostDetailViewModel.swift in Sources */,
 				C319E7EC2F0EB2D1009AB3CC /* CustomCheckBox.swift in Sources */,
 				C319E7F92F0EC5F4009AB3CC /* LaborLawNetworkService.swift in Sources */,
+				C3E034792F2109300020C2B1 /* GetPostDetailResponseDTO.swift in Sources */,
 				C319E7BC2F0B524C009AB3CC /* AuthMainViewModel.swift in Sources */,
 				C319E8132F0ECA74009AB3CC /* CreateUserResponseDTO.swift in Sources */,
 				C33DFE2B2F1721CF006FA7EE /* GetChatListUseCase.swift in Sources */,
 				C3E034672F1FA6490020C2B1 /* CustomSelectBox.swift in Sources */,
 				C3E034562F1F83210020C2B1 /* CreateBoardRequestDTO.swift in Sources */,
 				C319E7D52F0E181B009AB3CC /* EmploymentType.swift in Sources */,
+				C3E034852F21E29B0020C2B1 /* GetReviewListResponseDTO.swift in Sources */,
 				C319E7CE2F0E1723009AB3CC /* CreateUser.swift in Sources */,
 				C3E0343C2F1F6BA70020C2B1 /* BoardMainViewModel.swift in Sources */,
 				C319E79B2F0B3A40009AB3CC /* LoginView.swift in Sources */,

@@ -51,8 +51,23 @@ extension LaborLawAPI {
         
         return await self.networkService.get(self.host, url: LaborLawEndpoints.Board.getAllPost.url)
     }
+    
+    func getPostDetail(id: Int) async -> Result<LaborLawResponseWrapper<GetPostDetailResponseDTO>, LaborLawNetworkError> {
+        
+        return await self.networkService.get(self.host, url: LaborLawEndpoints.Board.getPostDetail(post_id: id).url)
+    }
+    
+    func createReview(id: Int, request: CreateReviewRequestDTO) async -> Result<LaborLawResponseWrapper<LaborLawEmptyResponse>, LaborLawNetworkError> {
+        let body = request.toDictionary()
+        
+        return await self.networkService.post(self.host, url: LaborLawEndpoints.Board.createReview(post_id: id).url, auth: true, httpBody: body)
+    }
+    
+    func getReviewList(id: Int) async -> Result<LaborLawResponseWrapper<[GetReviewListResponseDTO]>, LaborLawNetworkError> {
+        
+        return await self.networkService.get(self.host, url: LaborLawEndpoints.Board.getReview(post_id: id).url)
+    }
 }
-
 
 // MARK: User
 extension LaborLawAPI {

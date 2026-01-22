@@ -20,6 +20,7 @@ enum Destination {
     
     case boardMain
     case createPost
+    case postDetail(postId: Int)
     
     case setting
 //    case showMenuBoard
@@ -49,6 +50,8 @@ enum Destination {
             BoardMainView()
         case .createPost:
             CreatePostView()
+        case .postDetail(let postId):
+            PostDetailView(viewModel: PostDetailViewModel(postId: postId))
         case .setting:
             SettingView()
 //        case .join:

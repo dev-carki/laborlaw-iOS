@@ -9,12 +9,14 @@ import Foundation
 
 struct GetAllPostResponseDTO: Codable {
     let id: Int
+    let authorNickname: String
     let title: String
     let category: Int
     let createdAt: String
     
     enum CodingKeys: String, CodingKey {
         case id
+        case authorNickname = "author_nickname"
         case title
         case category
         case createdAt = "created_at"
@@ -25,6 +27,7 @@ extension GetAllPostResponseDTO {
     func toDomain() -> PostList {
         PostList(
             id: self.id,
+            nickName: self.authorNickname,
             title: self.title,
             category: self.category,
             createdAt: self.createdAt

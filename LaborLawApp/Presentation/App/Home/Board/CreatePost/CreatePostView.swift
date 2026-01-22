@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CreatePostView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @EnvironmentObject var postRefreshStore: PostRefreshStore
+
     @StateObject var coordinator = Coordinator()
     
     @StateObject private var viewModel = CreatePostViewModel()
@@ -83,6 +85,7 @@ struct CreatePostView: View {
             
             if viewModel.isCreatingPostSuccess {
                 CustomPopupView(titleText: "게시 완료", buttonText: "돌아가기") {
+                    postRefreshStore.shouldRefreshBoard = true
                     self.presentationMode.wrappedValue.dismiss()
                 }
             }

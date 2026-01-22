@@ -36,7 +36,9 @@ extension LaborLawEndpoints {
         case getAllPost
         case createPost
         case getUserPost
-        case getPostDetail(id: Int)
+        case getPostDetail(post_id: Int)
+        case createReview(post_id: Int)
+        case getReview(post_id: Int)
         case getAllCategories
         
         var url: String {
@@ -49,6 +51,10 @@ extension LaborLawEndpoints {
                 return "/api/v1/board/posts/me"
             case .getPostDetail(let id):
                 return "/api/v1/board/posts/\(id)"
+            case .createReview(let id):
+                return "/api/v1/board/posts/\(id)/reviews"
+            case .getReview(let id):
+                return "/api/v1/board/posts/\(id)/reviews"
             case .getAllCategories:
                 return "/api/v1/board/categories"
             }

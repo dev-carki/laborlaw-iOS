@@ -10,6 +10,7 @@ import SwiftUI
 struct BoardMainView: View {
     @StateObject private var viewModel = BoardMainViewModel()
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @EnvironmentObject var postRefreshStore: PostRefreshStore
     @StateObject var coordinator = Coordinator()
     
     var body: some View {
@@ -26,13 +27,15 @@ struct BoardMainView: View {
                     
                     ScrollViewReader { proxy in
                         ScrollView(showsIndicators: false) {
-                            LazyVStack(alignment: .leading, spacing: 12) {
+                            LazyVStack(alignment: .leading, spacing: 0) {
                                 ForEach(viewModel.postDatas) { post in
                                     PostListBox(data: post)
+                                        .padding(.all, 8)
+                                        .onTapGesture {
+                                            self.coordinator.push(destination: .postDetail(postId: post.id))
+                                        }
                                 }
                             }
-                            .padding(.horizontal, 16)
-                            .padding(.vertical, 8)
                         }
                     }
                 }
@@ -44,6 +47,14 @@ struct BoardMainView: View {
         .onAppear {
             Task {
                 await self.viewModel.getAllPostList()
+            }
+        }
+        .onChange(of: postRefreshStore.shouldRefreshBoard) { value in
+            guard value else { return }
+
+            Task {
+                await viewModel.getAllPostList()
+                postRefreshStore.shouldRefreshBoard = false
             }
         }
     }
