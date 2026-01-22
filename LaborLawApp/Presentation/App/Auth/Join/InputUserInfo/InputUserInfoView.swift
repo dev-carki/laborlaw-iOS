@@ -23,13 +23,23 @@ struct InputUserInfoView: View {
                 VStack(spacing: 0) {
                     coordinator.navigationLinkSection()
                     
-                    TopBarView(type: .back, text: "추가 정보 입력") {
+                    TopBarView(type: .back, text: "회원가입") {
                         self.presentationMode.wrappedValue.dismiss()
                         viewModel.dismiss()
                         
                     }
                     
                     VStack(spacing: 16) {
+                        TitledSection(title: "닉네임 (선택)") {
+                            CustomTextField(inputText: $viewModel.nicknameText, placeHolderText: "홍길동", iconName: nil)
+                                .onChange(of: $viewModel.nicknameText.wrappedValue) {
+                                    print(viewModel.nicknameText)
+                                    self.viewModel.signUpViewModel.createUser.nickname = viewModel.nicknameText
+                                }
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.top, 16)
+                        
                         TitledSection(title: "성별") {
                             HStack(spacing: 12) {
                                 CustomRadioButton(text: "남자", isSelected: viewModel.gender == .male)
@@ -45,6 +55,7 @@ struct InputUserInfoView: View {
                             }
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.top, 16)
                         
                         TitledSection(title: "나이 (선택)") {
                             HStack(spacing: 12) {
@@ -122,9 +133,7 @@ struct InputUserInfoView: View {
                         Spacer()
                         
                         CustomButton(text: "다음") {
-                            
-                            
-                            
+                            print(self.viewModel.signUpViewModel.createUser.nickname)
                             self.coordinator.push(destination: .selectLaw(signUpViewModel: self.viewModel.signUpViewModel))
                         }
                         .padding(.horizontal, 16)

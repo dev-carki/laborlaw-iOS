@@ -30,6 +30,38 @@ extension LaborLawEndpoints {
     }
 }
 
+// MARK: Board
+extension LaborLawEndpoints {
+    enum Board: EndPoint {
+        case getAllPost
+        case createPost
+        case getUserPost
+        case getPostDetail(post_id: Int)
+        case createReview(post_id: Int)
+        case getReview(post_id: Int)
+        case getAllCategories
+        
+        var url: String {
+            switch self {
+            case .getAllPost:
+                return "/api/v1/board/posts"
+            case .createPost:
+                return "/api/v1/board/posts"
+            case .getUserPost:
+                return "/api/v1/board/posts/me"
+            case .getPostDetail(let id):
+                return "/api/v1/board/posts/\(id)"
+            case .createReview(let id):
+                return "/api/v1/board/posts/\(id)/reviews"
+            case .getReview(let id):
+                return "/api/v1/board/posts/\(id)/reviews"
+            case .getAllCategories:
+                return "/api/v1/board/categories"
+            }
+        }
+    }
+}
+
 // MARK: User
 extension LaborLawEndpoints {
     enum User: EndPoint {

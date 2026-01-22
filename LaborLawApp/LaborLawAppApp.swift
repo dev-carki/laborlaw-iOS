@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct LaborLawAppApp: App {
     @StateObject var coordinator = Coordinator(isRoot: true)
+    @StateObject var postRefreshStore = PostRefreshStore()
     
     var body: some Scene {
 //        WindowGroup {
@@ -47,6 +48,7 @@ struct LaborLawAppApp: App {
                 .navigationBarBackButtonHidden()
             }
             .navigationViewStyle(.stack)
+            .environmentObject(postRefreshStore)
         }
     }
 }

@@ -24,6 +24,12 @@ class CustomColor {
     static let customGray300: Color = Color(hex: "#C2C2C2")
     static let customGray200: Color = Color(hex: "#DBDBDB")
     static let customGray100: Color = Color(hex: "#F5F5F5")
+    
+    
+    static let incomeTaxLawColor: Color = Color(hex: "#1E1E1E")
+    static let laborStandardsActColor: Color = Color(hex: "#1D4E89")
+    static let employeeRetirementBenefitsActColor: Color = Color(hex: "##2E7D32")
+    static let employmentInsuranceActColor: Color = Color(hex: "#FF8C42")
 }
 
 extension Color {

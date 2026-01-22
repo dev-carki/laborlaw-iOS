@@ -17,8 +17,10 @@ struct ChatListView: View {
             ZStack {
                 VStack(spacing: 0) {
                     coordinator.navigationLinkSection()
-                    TopBarView(type: .back, text: "채팅 목록") {
+                    TopBarView(type: .back, text: "채팅 목록", rightIconName: "square.and.pencil") {
                         self.presentationMode.wrappedValue.dismiss()
+                    } onRightTap: {
+                        self.coordinator.push(destination: .chat(viewModel: ChatViewModel(conversationId: nil)))
                     }
                     
                     ScrollViewReader { proxy in

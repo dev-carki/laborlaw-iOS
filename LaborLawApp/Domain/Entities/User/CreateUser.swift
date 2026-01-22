@@ -11,6 +11,7 @@ struct CreateUser {
     var email: String
     var password: String
 
+    var nickname: String?
     var gender: Gender?
     var age: String?
     var salaryRange: SalaryRange?
@@ -21,6 +22,7 @@ struct CreateUser {
     init(
         email: String,
         password: String,
+        nickname: String?,
         gender: Gender?,
         age: String?,
         salaryRange: SalaryRange?,
@@ -30,6 +32,7 @@ struct CreateUser {
     ) {
         self.email = email
         self.password = password
+        self.nickname = nickname
         self.gender = gender
         self.age = age
         self.salaryRange = salaryRange
